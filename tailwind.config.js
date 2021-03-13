@@ -12,7 +12,11 @@ module.exports = {
         "sans-serif",
       ],
     },
-    extend: {},
+    extend: {
+      colors: {
+        navy : "#0A192F"
+      }
+    },
   },
   variants: {
     extend: {},
