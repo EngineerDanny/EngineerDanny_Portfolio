@@ -1,13 +1,9 @@
-
-import './App.css';
-
 function App() {
   return (
     <div className="App">
-      <nav></nav>
-    <h2>
-      Daniel Agyapong
-    </h2>
+      <nav className="p-x20"></nav>
+      <h2 className=" ">Daniel Agyapong</h2>
+      <button class="btn btn-green">Button</button>
     </div>
   );
 }
