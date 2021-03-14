@@ -17,6 +17,7 @@ module.exports = {
       colors: {
         navy: "#0A192F",
       },
+      
     },
   },
   variants: {
