@@ -1,14 +1,11 @@
 function App() {
   return (
-    <div className=" bg-navy text-white box-border h-screen">
+    <div className=" bg-navy text-white box-border h-screen mx-auto">
       {/* 0A192F */}
-      <nav className="w-full flex flex-row p-5">
-        <img
-          src="./assets/my-pic.jpg"
-          className=" h-10 w-10 object-cover"
-          alt="MyPicture"
-        />
-        <ul className=" w-10 flex flex-row">
+      <nav className="flex flex-row p-5 items-center justify-between">
+        <img src="@/public/assets/my-pic.jpg" className="" alt="MyPicture" />
+
+        <ul className="flex flex-row justify-evenly">
           <li class="fadedown-enter-done">
             <a href="/#about">About</a>
           </li>
