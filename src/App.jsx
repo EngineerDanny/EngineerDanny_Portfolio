@@ -25,7 +25,6 @@ function App() {
             </li>
           </ul>
         </nav>
-
         <div className="flex flex-col justify-evenly h-4/6">
           <h1 className="text-md text-green-300">Hello, I am</h1>
           <h2 className="text-6xl font-semibold">Daniel Agyapong.</h2>
@@ -37,7 +36,6 @@ function App() {
             KNUST specialized in building performant mobile, web and desktop
             apps. I love to help open-source community.
           </p>
-
           <a
             href="mailto:agyapongdaniel7777@gmail.com"
             className="text-base p-2 border-2 border-green-500 rounded-md text-green-500 w-36 text-center"
@@ -47,7 +45,7 @@ function App() {
         </div>
       </section>
 
-      {/* About section */}
+      {/* About Section */}
       <section className="h-screen">
         <div className="flex flex-col justify-evenly h-4/6">
           <div className="flex flex-row items-center">
@@ -74,6 +72,7 @@ function App() {
           </div>
         </div>
       </section>
+      
       {/* Work Experience Section */}
       <section className="h-screen">
         <div className="flex flex-col justify-evenly h-4/6">
