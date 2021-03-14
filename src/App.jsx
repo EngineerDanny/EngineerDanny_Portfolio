@@ -1,7 +1,7 @@
 function App() {
   return (
     <div className=" bg-navy text-white box-border mx-auto">
-      <section className="h-screen">
+      <section className="min-h-screen">
         <nav className="flex flex-row p-5 items-center justify-between">
           <img src="@/public/assets/my-pic.jpg" className="" alt="MyPicture" />
           <ul className="flex flex-row items-center">
@@ -46,7 +46,7 @@ function App() {
         </div>
       </section>
 
-      <section className="h-screen">
+      <section className="min-h-screen">
         <div className="flex flex-col justify-evenly h-4/6">
           {/* About section */}
           <div className="flex flex-row items-center">
@@ -74,7 +74,7 @@ function App() {
         </div>
       </section>
 
-      <section className="h-screen">
+      <section className="min-h-screen">
         <div className="flex flex-col justify-evenly h-4/6">
           
           <div className="flex flex-row items-center">
