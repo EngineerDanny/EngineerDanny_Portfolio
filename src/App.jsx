@@ -85,16 +85,16 @@ function App() {
             <div className="w-40 h-0.5 bg-gray-300 opacity-30"></div>
           </div>
 
-          <div className="flex flex-row items-center w-full">
+          <div className="flex flex-row ">
             {/*Job Tabs Component */}
-            <ul className="flex flex-col border-r">
+            <ul className="flex flex-col items-center content-center border-gray-300 border-l-2 mr-5  pl-3">
               <li className="text-green-500 w-48">FarmHouse</li>
               <li className=" w-48">Godlives</li>
               <li className=" w-48">Dynammite</li>
             </ul>
-            
+
             {/* Job Content */}
-            <div className="max-w-md">
+            <div className="flex flex-col">
               {/* Job title */}
               <h3>
                 <span>Engineer</span>
