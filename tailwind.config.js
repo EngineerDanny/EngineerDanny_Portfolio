@@ -3,6 +3,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
       custom: [
         "Calibre",
         "San Francisco",
@@ -14,8 +15,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        navy : "#0A192F"
-      }
+        navy: "#0A192F",
+      },
     },
   },
   variants: {

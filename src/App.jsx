@@ -1,10 +1,11 @@
 function App() {
   return (
-    <div className=" bg-navy text-white">
+    <div className=" bg-navy text-white box-border max-w-full">
       {/* 0A192F */}
-      <nav className="w-full">
+      <nav className="w-full flex flex-row p-5">
         
-        <ul className="flex flex-row justify-end content-between">
+        <img src="./assets/my-pic.jpg" className=" h-10 w-10 object-cover" alt="MyPicture"/>
+        <ul className=" w-10 flex flex-row">
           <li class="fadedown-enter-done">
             <a href="/#about">About</a>
           </li>
