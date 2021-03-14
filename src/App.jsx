@@ -84,30 +84,52 @@ function App() {
             </h1>
             <div className="w-40 h-0.5 bg-gray-300 opacity-30"></div>
           </div>
-          {/*Job Tabs Component */}
-          <div className="flex flex-row w-2/5 justify-between items-center">
-            <button className="text-green-500">FarmHouse</button>
-            <button>Godlives</button>
-            <button>Dynammite</button>
-          </div>
-          {/* Job Content */}
-          <div>
-            {/* Job title */}
-            <h3>
-              <span>Engineer</span>
-              <span className="">
-                &nbsp;@&nbsp;
-                <a
-                  href="https://www.farmhouse.com/"
-                  class="inline-link"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Farmhouse
-                </a>
-              </span>
-            </h3>
-            <p className="">May 2018 - Present</p>
+
+          <div className="flex flex-row items-center w-full">
+            {/*Job Tabs Component */}
+            <div className="flex flex-col">
+              <button className="text-green-500 w-16">FarmHouse</button>
+              <button className=" w-16">Godlives</button>
+              <button className=" w-16">Dynammite</button>
+            </div>
+
+            {/* Divider */}
+            <div className="w-0.5 h-full mx-5 bg-gray-300 opacity-30"></div>
+
+            {/* Job Content */}
+            <div className="max-w-md">
+              {/* Job title */}
+              <h3>
+                <span>Engineer</span>
+                <span className="">
+                  &nbsp;@&nbsp;
+                  <a
+                    href="https://www.farmhouse.com/"
+                    rel="noopener noreferrer"
+                  >
+                    Farmhouse
+                  </a>
+                </span>
+              </h3>
+              {/* Job duration */}
+              <p className="">May 2018 - Present</p>
+              <ul>
+                <li>
+                  Write modern, performant, maintainable code for a diverse
+                  array of client and internal projects
+                </li>
+                <li>
+                  Work with a variety of different languages, platforms,
+                  frameworks, and content management systems such as JavaScript,
+                  TypeScript, Gatsby, React, Craft, WordPress, Prismic, and
+                  Netlify
+                </li>
+                <li>
+                  Communicate with multi-disciplinary teams of engineers,
+                  designers, producers, and clients on a daily basis
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
