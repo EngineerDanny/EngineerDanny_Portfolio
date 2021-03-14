@@ -5,21 +5,23 @@ function App() {
       <nav className="flex flex-row p-5 items-center justify-between">
         <img src="@/public/assets/my-pic.jpg" className="" alt="MyPicture" />
 
-        <ul className="flex flex-row justify-evenly">
-          <li class="fadedown-enter-done">
+        <ul className="flex flex-row items-center">
+          <li class="mx-2">
             <a href="/#about">About</a>
           </li>
-          <li class="fadedown-enter-done">
+          <li class="mx-2">
             <a href="/#jobs">Experience</a>
           </li>
-          <li class="fadedown-enter-done">
+          <li class="mx-2">
             <a href="/#projects">Work</a>
           </li>
-          <li class="fadedown-enter-done">
+          <li class="mx-2">
             <a href="/#contact">Contact</a>
           </li>
-          <li>
-            <button>Resume</button>
+          <li class="mx-2">
+            <button className=" px-2 py-1 border-2 border-green-700  rounded-md text-green-700">
+              Resume
+            </button>
           </li>
         </ul>
       </nav>
