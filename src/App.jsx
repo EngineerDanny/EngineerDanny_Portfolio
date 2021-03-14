@@ -72,21 +72,42 @@ function App() {
           </div>
         </div>
       </section>
-      
+
       {/* Work Experience Section */}
       <section className="h-screen">
-        <div className="flex flex-col justify-evenly h-4/6">
-          {/* About section */}
-          <div className="flex flex-row items-center">
+        <div className="flex flex-col justify-start h-4/6">
+          {/* Work Experience Header */}
+          <div className="flex flex-row items-center mb-10">
             <div className="w-40 h-0.5 bg-gray-300 opacity-30"></div>
             <h1 className="text-4xl font-medium opacity-80 mx-3">
               My Work Experience
             </h1>
             <div className="w-40 h-0.5 bg-gray-300 opacity-30"></div>
           </div>
-
-          <div className="flex flex-row w-4/5 items-center">
-            <p className="max-w-md text-base font-light opacity-80"></p>
+          {/*Job Tabs Component */}
+          <div className="flex flex-row w-2/5 justify-between items-center">
+            <button className="text-green-500">FarmHouse</button>
+            <button>Godlives</button>
+            <button>Dynammite</button>
+          </div>
+          {/* Job Content */}
+          <div>
+            {/* Job title */}
+            <h3>
+              <span>Engineer</span>
+              <span className="">
+                &nbsp;@&nbsp;
+                <a
+                  href="https://www.farmhouse.com/"
+                  class="inline-link"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Farmhouse
+                </a>
+              </span>
+            </h3>
+            <p className="">May 2018 - Present</p>
           </div>
         </div>
       </section>
