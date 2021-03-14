@@ -74,8 +74,8 @@ function App() {
       </section>
 
       {/* Work Experience Section */}
-      <section className="h-screen">
-        <div className="flex flex-col justify-start h-4/6">
+      <section className="h-screen w-screen">
+        <div className="flex flex-col justify-start h-4/6 w-full">
           {/* Work Experience Header */}
           <div className="flex flex-row items-center mb-10">
             <div className="w-40 h-0.5 bg-gray-300 opacity-30"></div>
@@ -87,15 +87,12 @@ function App() {
 
           <div className="flex flex-row items-center w-full">
             {/*Job Tabs Component */}
-            <div className="flex flex-col">
-              <button className="text-green-500 w-16">FarmHouse</button>
-              <button className=" w-16">Godlives</button>
-              <button className=" w-16">Dynammite</button>
-            </div>
-
-            {/* Divider */}
-            <div className="w-0.5 h-full mx-5 bg-gray-300 opacity-30"></div>
-
+            <ul className="flex flex-col border-r">
+              <li className="text-green-500 w-48">FarmHouse</li>
+              <li className=" w-48">Godlives</li>
+              <li className=" w-48">Dynammite</li>
+            </ul>
+            
             {/* Job Content */}
             <div className="max-w-md">
               {/* Job title */}
