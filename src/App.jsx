@@ -27,9 +27,9 @@ function App() {
 
         <div className="flex flex-col justify-evenly h-4/6">
           <h1 className="text-md text-green-300">Hello, I am</h1>
-          <h2 className="text-6xl font-semibold">Daniel Agyapong</h2>
+          <h2 className="text-6xl font-semibold">Daniel Agyapong.</h2>
           <h3 className="text-5xl font-medium opacity-80 -mt-4">
-            I build professional cross-platform apps
+            I build professional cross-platform apps.
           </h3>
           <p className="text-base font-light max-w-lg opacity-80">
             I am a FullStack Developer and Electrical/Electronics Engineer at
@@ -59,14 +59,32 @@ function App() {
             <p className="max-w-md text-base font-light opacity-80">
               Hi! I'm Daniel, a FullStack engineer based in KNUST, Ghana. I
               enjoy creating things that live on the internet, whether that be
-              websites, applications, or anything in between. My goal is to
-              always build products that provide pixel-perfect, performant
-              experiences. Shortly after graduating from Northeastern
+              websites, applications, or anything in between. <br />
+              <br />
+              My goal is to always build products that provide pixel-perfect,
+              performant experiences. Shortly after graduating from Northeastern
               University, I joined the engineering team at Upstatement where I
               work on a wide variety of interesting and meaningful projects on a
-              daily basis. Here are a few technologies I've been working with
+              daily basis.
+              <br />
+              <br /> Here are a few technologies I've been working with
               recently:
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="h-screen">
+        <div className="flex flex-col justify-evenly h-4/6">
+          
+          <div className="flex flex-row items-center">
+            <div className="w-40 h-0.5 bg-white"></div>
+            <h1 className="text-4xl font-medium opacity-80">About</h1>
+            <div className="w-40 h-0.5 bg-white"></div>
+          </div>
+       
+          <div className="flex flex-row w-4/5 items-center">
+            <p className="max-w-md text-base font-light opacity-80"></p>
           </div>
         </div>
       </section>
