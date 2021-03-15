@@ -1,30 +1,11 @@
+import logo from  "./assets/my-pic.jpg";
+
 function App() {
   return (
     <div className=" bg-navy text-white box-border mx-auto">
       {/* Home Section */}
       <section className="h-screen">
-        <nav className="flex flex-row p-5 items-center justify-between">
-          <img src="@/public/assets/my-pic.jpg" className="" alt="MyPicture" />
-          <ul className="flex flex-row items-center">
-            <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-              <a href="/#about">About</a>
-            </li>
-            <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-              <a href="/#jobs">Experience</a>
-            </li>
-            <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-              <a href="/#projects">Work</a>
-            </li>
-            <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-              <a href="/#contact">Contact</a>
-            </li>
-            <li class="mx-2">
-              <button className="text-sm px-2 py-1 border-2 border-green-500 rounded-md text-green-500">
-                Resume
-              </button>
-            </li>
-          </ul>
-        </nav>
+  
         <div className="flex flex-col justify-evenly h-4/6">
           <h1 className="text-md text-green-300">Hello, I am</h1>
           <h2 className="text-6xl font-semibold">Daniel Agyapong.</h2>
@@ -74,8 +55,8 @@ function App() {
       </section>
 
       {/* Work Experience Section */}
-      <section className="h-screen w-screen">
-        <div className="flex flex-col justify-start h-4/6 w-full">
+      <section className="h-screen flex items-center">
+        <div className="flex flex-col h-4/6 w-full">
           {/* Work Experience Header */}
           <div className="flex flex-row items-center mb-10">
             <div className="w-40 h-0.5 bg-gray-300 opacity-30"></div>
