@@ -1,11 +1,12 @@
-import logo from  "./assets/my-pic.jpg";
+import logo from "./assets/my-pic.jpg";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className=" bg-navy text-white box-border mx-auto">
       {/* Home Section */}
       <section className="h-screen">
-  
+        <NavBar />
         <div className="flex flex-col justify-evenly h-4/6">
           <h1 className="text-md text-green-300">Hello, I am</h1>
           <h2 className="text-6xl font-semibold">Daniel Agyapong.</h2>
