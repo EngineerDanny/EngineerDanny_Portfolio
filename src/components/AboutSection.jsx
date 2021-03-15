@@ -3,10 +3,10 @@ import LazyLoadImage from "react-lazy-load-image-component";
 import express from "../assets/techs/express.png";
 import mongo from "../assets/techs/mongo.png";
 import node from "../assets/techs/node.png";
- import react from "../assets/techs/react.svg";
+import react from "../assets/techs/react.svg";
 
 const AboutSection = () => {
-  const techImages = [express, mongo, node,react];
+  const techImages = [express, mongo, node, react];
   return (
     <div className="flex flex-col items-center h-4/6">
       <div className="flex flex-row items-center my-10">
@@ -15,8 +15,8 @@ const AboutSection = () => {
         <div className="w-40 h-0.5 bg-gray-300 opacity-30"></div>
       </div>
       {/* Details */}
-      <div className="flex flex-col  items-center">
-        <p className=" w-4/6 text-base font-light opacity-80 mb-12">
+      <div className="flex flex-col max-w-4xl items-center">
+        <p className="text-base font-light opacity-80 mb-12">
           Hi! I'm Daniel, a FullStack engineer based in KNUST, Ghana. I enjoy
           creating things that live on the internet, whether that be websites,
           applications, or anything in between. <br />
@@ -30,19 +30,17 @@ const AboutSection = () => {
           <br /> Here are a few technologies I've been working with recently:
         </p>
 
-        <div>
-          <div className="flex  justify-center">
-            {techImages.map((tech, index) => (
-              <span
-                key={index}
-                className={` h-40 w-40 bg-white shadow-xl  ml-2  rounded-full flex justify-center items-center p-5 m-2 ${
-                  index % 2 !== 0 ? "animate-bounce" : "animate-bounceFirst"
-                }`}
-              >
-                <img src={tech} alt=""/>
-              </span>
-            ))}
-          </div>
+        <div className="flex justify-center">
+          {techImages.map((tech, index) => (
+            <span
+              key={index}
+              className={` h-40 w-40 bg-white shadow-xl  ml-2  rounded-full flex justify-center items-center p-5 m-2 ${
+                index % 2 !== 0 ? "animate-bounce" : "animate-bounceFirst"
+              }`}
+            >
+              <img src={tech} alt="" />
+            </span>
+          ))}
         </div>
       </div>
     </div>
