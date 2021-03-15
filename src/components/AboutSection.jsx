@@ -8,7 +8,7 @@ import react from "../assets/techs/react.svg";
 const AboutSection = () => {
   const techImages = [express, mongo, node, react];
   return (
-    <div className="flex flex-col items-center h-4/6">
+    <div className="flex flex-col justify-start items-center h-4/6">
       <div className="flex flex-row items-center my-10">
         <div className="w-40 h-0.5  bg-gray-300 opacity-30"></div>
         <h1 className="text-4xl font-medium opacity-80 mx-3">About</h1>
