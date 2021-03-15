@@ -5,7 +5,7 @@ function App() {
   return (
     <div className=" bg-navy text-white box-border mx-auto">
       {/* Home Section */}
-      <section className="h-screen">
+      <section className="h-screen flex flex-col justify-between">
         <NavBar />
         <IntroHeader/>  
       </section>

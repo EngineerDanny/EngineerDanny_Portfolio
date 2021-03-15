@@ -1,9 +1,9 @@
 import React from "react";
-import profilePic from "../assets/my-pic.jpg"
+import profilePic from "../assets/my-pic.jpg";
 
 const IntroHeader = () => {
   return (
-    <div className="flex flex-row  justify-between">
+    <div className="flex flex-row items-center justify-evenly h-full">
       <div className="flex flex-col justify-evenly h-4/6">
         <h1 className="text-md text-green-300">Hello, I am</h1>
         <h2 className="text-6xl font-semibold">Daniel Agyapong.</h2>
@@ -22,7 +22,11 @@ const IntroHeader = () => {
           Contact Me
         </a>
       </div>
-      <img src={profilePic} className="w-48 h-48 rounded-3xl object-cover" alt="MyPicture" />
+      <img
+        src={profilePic}
+        className="w-60 h-60  rounded-full object-cover"
+        alt="MyPicture"
+      />
     </div>
   );
 };
