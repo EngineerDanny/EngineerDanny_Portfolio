@@ -1,9 +1,12 @@
 import React from "react";
-import express from "../assets/techs/express.png"
-
+import LazyLoadImage from "react-lazy-load-image-component";
+import express from "../assets/techs/express.png";
+import mongo from "../assets/techs/mongo.png";
+import node from "../assets/techs/node.png";
+ import react from "../assets/techs/react.svg";
 
 const AboutSection = () => {
-    const techImages  =[];
+  const techImages = [express, mongo, node,react];
   return (
     <div className="flex flex-col justify-evenly h-4/6">
       <div className="flex flex-row items-center">
@@ -28,19 +31,19 @@ const AboutSection = () => {
         </p>
 
         <div>
-        <div className="flex flex-wrap justify-center">
-          {content.stack.tech.map((tech, index) => (
-            <span
-              key={index}
-              className={` h-40 w-40 bg-white shadow-xl  ml-2  rounded-full flex justify-center items-center p-5 m-2 ${
-                index % 2 !== 0 ? 'animate-bounce' : 'animate-bounceFirst'
-              }`}
-            >
-              <LazyLoadImage effect="blur" src={tech.img} alt={tech.alt} />
-            </span>
-          ))}
+          <div className="flex flex-wrap justify-center">
+            {techImages.map((tech, index) => (
+              <span
+                key={index}
+                className={` h-40 w-40 bg-white shadow-xl  ml-2  rounded-full flex justify-center items-center p-5 m-2 ${
+                  index % 2 !== 0 ? "animate-bounce" : "animate-bounceFirst"
+                }`}
+              >
+                <img src={tech} alt=""/>
+              </span>
+            ))}
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );
