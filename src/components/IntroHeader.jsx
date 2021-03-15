@@ -1,11 +1,19 @@
 import React from "react";
 import profilePic from "../assets/my-pic.jpg";
+import Typical from "react-typical";
 
 const IntroHeader = () => {
   return (
     <div className="flex flex-row items-center justify-evenly h-full">
       <div className="flex flex-col justify-evenly h-4/6">
-        <h1 className="text-md text-green-300">Hello, I am</h1>
+        <h1 className="text-md text-green-300">
+          <Typical
+            steps={["Hello, I am", 1000]}
+            loop={Infinity}
+            className=""
+            wrapper="p"
+          />
+        </h1>
         <h2 className="text-6xl font-semibold">Daniel Agyapong.</h2>
         <h3 className="text-5xl font-medium opacity-80 -mt-4">
           I build professional cross-platform apps.
