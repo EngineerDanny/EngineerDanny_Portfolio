@@ -2,7 +2,7 @@ import React from "react";
 
 const WorkExperience = () => {
   return (
-    <div className="flex flex-col h-4/6 w-full">
+    <div className="flex flex-col h-4/6 items-center justify-start">
       {/* Work Experience Header */}
       <div className="flex flex-row items-center mb-10">
         <div className="w-40 h-0.5 bg-gray-300 opacity-30"></div>
@@ -12,10 +12,12 @@ const WorkExperience = () => {
         <div className="w-40 h-0.5 bg-gray-300 opacity-30"></div>
       </div>
 
-      <div className="flex flex-row ">
+      <div className="flex flex-row w-4/5">
         {/*Job Tabs Component */}
-        <ul className="flex flex-col items-center content-center border-gray-300 border-l-2 mr-5  pl-3">
-          <li className="text-green-500 w-48">FarmHouse</li>
+        <ul className="flex flex-col justify-evenly border-gray-300 border-l-2 mr-5  pl-3">
+          <li className=" bg-gray-800 text-green-500 ">
+            <h1>FarmHouse</h1>
+          </li>
           <li className=" w-48">Godlives</li>
           <li className=" w-48">Dynammite</li>
         </ul>

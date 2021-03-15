@@ -1,7 +1,7 @@
-import NavBar from "./components/NavBar"
-import IntroHeader from "./components/IntroHeader"
-import AboutSection from "./components/AboutSection"
-import WorkExperience from "./components/WorkExperience"
+import NavBar from "./components/NavBar";
+import IntroHeader from "./components/IntroHeader";
+import AboutSection from "./components/AboutSection";
+import WorkExperience from "./components/WorkExperience";
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
       </section>
 
       {/* Work Experience Section */}
-      <section className="h-screen flex items-center">
-     <WorkExperience/>
+      <section className="h-screen">
+        <WorkExperience />
       </section>
     </div>
   );
