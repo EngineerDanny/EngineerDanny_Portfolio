@@ -14,12 +14,16 @@ const WorkExperience = () => {
 
       <div className="flex flex-row w-4/5">
         {/*Job Tabs Component */}
-        <ul className="flex flex-col justify-evenly border-gray-300 border-l-2 mr-5  pl-3">
-          <li className=" bg-gray-800 text-green-500 ">
-            <h1>FarmHouse</h1>
+        <ul className="flex flex-col justify-evenly border-green-500 border-l-2 mr-5">
+          <li className="flex-1 bg-gray-800 text-green-500 px-20  mb-1 flex items-center justify-center">
+            <button className="w-full h-full">FarmHouse</button>
           </li>
-          <li className=" w-48">Godlives</li>
-          <li className=" w-48">Dynammite</li>
+          <li className="flex-1 bg-gray-800 text-green-500 px-20  mb-1 flex items-center justify-center">
+            <h1>Godlives</h1>
+          </li>
+          <li className="flex-1 bg-gray-800 text-green-500 px-20  flex items-center justify-center ">
+            <h1>Dynammite</h1>
+          </li>
         </ul>
 
         {/* Job Content */}
@@ -55,6 +59,10 @@ const WorkExperience = () => {
       </div>
     </div>
   );
+};
+
+const _WorkTile = ({ title, duration, contentList }) => {
+  return <div></div>;
 };
 
 export default WorkExperience;
