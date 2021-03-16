@@ -45,18 +45,18 @@ const AboutSection = () => {
         </div>
         <tbody className="align-middle table-row-group w-full">
           <tr className="flex flex-row content-center m-3 justify-between">
-            <td>Developer, back-end</td>
-            <td className="h-8 flex-1 flex rounded-md bg-white">
+            <td className="">Developer, back-end</td>
+            <td className=" w-9/12 flex rounded-md bg-white">
               <div className="rounded-l-md w-2/5 bg-green-500"></div>
             </td>
             <td>
               <span>55.2%</span>
             </td>
           </tr>
-
+          
           <tr className="flex flex-row content-center m-3 justify-between">
-            <td>Developer, back-end</td>
-            <td className="h-8 flex-1 flex rounded-md bg-white">
+            <td className="">Developer, back-end</td>
+            <td className=" w-9/12 flex rounded-md bg-white">
               <div className="rounded-l-md w-2/5 bg-green-500"></div>
             </td>
             <td>
