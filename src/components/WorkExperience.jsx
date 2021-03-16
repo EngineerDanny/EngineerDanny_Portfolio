@@ -1,4 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+
+const workData = [
+  {
+    place: "Farmhouse",
+    title: "Engineer",
+    duration: "May 2018 - Present",
+    content: [
+      "Write modern, performant, maintainable code for a " +
+        "diverse array of client and internal projects",
+      "Work with a variety of different languages, platforms, frameworks," +
+        "and content management systems such as JavaScript, TypeScript," +
+        "Gatsby, React, Craft, WordPress, Prismic, and Netlify ",
+      "Communicate with multi-disciplinary teams of engineers, designers," +
+        "producers, and clients on a daily basis",
+    ],
+  },
+  {},
+  {},
+];
 
 const WorkExperience = () => {
   return (
@@ -16,7 +35,7 @@ const WorkExperience = () => {
         {/*Job Tabs Component */}
         <ul className="flex flex-col justify-evenly border-green-500 border-l-2 mr-5">
           <li className="flex-1 bg-gray-800 text-green-500 px-20  mb-1 flex items-center justify-center">
-            <button className="w-full h-full">FarmHouse</button>
+            <h1>FarmHouse</h1>
           </li>
           <li className="flex-1 bg-gray-800 text-green-500 px-20  mb-1 flex items-center justify-center">
             <h1>Godlives</h1>
@@ -61,7 +80,8 @@ const WorkExperience = () => {
   );
 };
 
-const _WorkTile = ({ title, duration, contentList }) => {
+const WorkTile = ({ title, duration, contentList }) => {
+  const [workContent, setworkContent] = useState(0);
   return <div></div>;
 };
 
