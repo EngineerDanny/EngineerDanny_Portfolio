@@ -105,10 +105,4 @@ const WorkExperience = () => {
     </div>
   );
 };
-
-const WorkTile = ({ title, duration, contentList }) => {
-  const [workContent, setworkContent] = useState(0);
-  return <div></div>;
-};
-
 export default WorkExperience;

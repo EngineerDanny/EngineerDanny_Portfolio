@@ -1,7 +1,7 @@
 import NavBar from "./components/NavBar";
 import IntroHeader from "./components/IntroHeader";
 import AboutSection from "./components/AboutSection";
-import WorkExperience from "./components/WorkExperience";
+import WorkExperience from "./components/WorkExperience/WorkExperience";
 
 function App() {
   return (
