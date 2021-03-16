@@ -64,7 +64,7 @@ const WorkExperience = () => {
           {workData.map((value, index) => {
             return (
               <li className="flex-1 bg-gray-800 text-green-500 px-20  mb-1 flex items-center justify-center">
-                <h1>FarmHouse</h1>
+                <h1>{value.place}</h1>
               </li>
             );
           })}
