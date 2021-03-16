@@ -7,6 +7,7 @@ import react from "../assets/techs/react.svg";
 
 const AboutSection = () => {
   const techImages = [express, mongo, node, react];
+
   return (
     <div className="flex flex-col justify-start items-center h-4/6">
       <div className="flex flex-row items-center my-10">
@@ -41,6 +42,10 @@ const AboutSection = () => {
               <img src={tech} alt="" />
             </span>
           ))}
+        </div>
+
+        <div className="h-2 w-5/6 mb-4 flex rounded bg-red-200">
+          <div className="rounded-l w-2/5 bg-red-500"></div>
         </div>
       </div>
     </div>
