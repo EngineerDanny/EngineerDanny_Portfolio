@@ -54,7 +54,7 @@ const AboutSection = () => {
             </td>
           </tr>
           <tr className="flex flex-row content-center m-3 justify-between">
-            <td className=" w-10">
+            <td className=" max-h-1 overflow-clip">
               Developer, backbackbackbackbackbackback-end
             </td>
             <td className=" h-5 w-9/12 flex rounded-md bg-white">
