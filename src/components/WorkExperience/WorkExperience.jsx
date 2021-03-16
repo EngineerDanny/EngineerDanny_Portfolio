@@ -47,6 +47,8 @@ const workData = [
 ];
 
 const WorkExperience = () => {
+  const [currentIndex, setcurrentIndex] = useState(0);
+  
   return (
     <div className="flex flex-col h-4/6 items-center justify-start">
       {/* Work Experience Header */}
@@ -63,12 +65,12 @@ const WorkExperience = () => {
         <ul className="flex flex-col justify-evenly border-green-500 border-l-2 mr-5">
           {workData.map((value, index) => {
             return (
-              <li
+              <button
                 key={index}
                 className="flex-1 bg-gray-800 text-green-500 px-20  mb-1 flex items-center justify-center"
               >
                 <h1>{value.place}</h1>
-              </li>
+              </button>
             );
           })}
         </ul>
