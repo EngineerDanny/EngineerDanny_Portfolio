@@ -53,9 +53,8 @@ const AboutSection = () => {
               <span>55.2%</span>
             </td>
           </tr>
-          
           <tr className="flex flex-row content-center m-3 justify-between">
-            <td className="">Developer, back-end</td>
+            <td className="max-w-md">Developer, back-endendendendendend</td>
             <td className=" w-9/12 flex rounded-md bg-white">
               <div className="rounded-l-md w-2/5 bg-green-500"></div>
             </td>
