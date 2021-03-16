@@ -43,10 +43,27 @@ const AboutSection = () => {
             </span>
           ))}
         </div>
+        <tbody className="align-middle table-row-group w-full">
+          <tr className="flex flex-row content-center m-3 justify-between">
+            <td>Developer, back-end</td>
+            <td className="h-8 flex-1 flex rounded-md bg-white">
+              <div className="rounded-l-md w-2/5 bg-green-500"></div>
+            </td>
+            <td>
+              <span>55.2%</span>
+            </td>
+          </tr>
 
-        <div className="h-2 w-5/6 mb-4 flex rounded bg-red-200">
-          <div className="rounded-l w-2/5 bg-red-500"></div>
-        </div>
+          <tr className="flex flex-row content-center m-3 justify-between">
+            <td>Developer, back-end</td>
+            <td className="h-8 flex-1 flex rounded-md bg-white">
+              <div className="rounded-l-md w-2/5 bg-green-500"></div>
+            </td>
+            <td>
+              <span>55.2%</span>
+            </td>
+          </tr>
+        </tbody>
       </div>
     </div>
   );
