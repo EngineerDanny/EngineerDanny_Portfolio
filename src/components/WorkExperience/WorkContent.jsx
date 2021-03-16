@@ -5,10 +5,10 @@ const WorkContent = ({ title, duration, contentList }) => {
     <div className="flex flex-col">
       <h1>{title}</h1>
       {/* Job duration */}
-      <p className="">{duration}</p>
+      <p className=" py-2">{duration}</p>
       <ul>
         {contentList.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index} className="pb-2">✅ {item}</li>
         ))}
       </ul>
     </div>

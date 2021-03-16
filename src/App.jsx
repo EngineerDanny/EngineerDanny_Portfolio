@@ -2,6 +2,7 @@ import NavBar from "./components/NavBar";
 import IntroHeader from "./components/IntroHeader";
 import AboutSection from "./components/AboutSection";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
@@ -20,6 +21,11 @@ function App() {
       {/* Work Experience Section */}
       <section className="h-screen">
         <WorkExperience />
+      </section>
+
+       {/* Projects Section */}
+       <section className="h-screen">
+        <Projects />
       </section>
     </div>
   );

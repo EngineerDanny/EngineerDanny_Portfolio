@@ -3,8 +3,8 @@ import WorkContent from "./WorkContent";
 
 const workData = [
   {
-    place: "Farmhouse",
-    title: "Engineer",
+    place: "FARMHOUSE",
+    title: "Frontend Developer",
     duration: "May 2018 - Present",
     content: [
       "Write modern, performant, maintainable code for a " +
@@ -17,9 +17,9 @@ const workData = [
     ],
   },
   {
-    place: "Godlives",
-    title: "Engineer",
-    duration: "May 2018 - Present",
+    place: "GODLIVES",
+    title: "Mobile Developer & BackEnd Engineer",
+    duration: "May 2019 - Present",
     content: [
       "Write modern, performant, maintainable code for a " +
         "diverse array of client and internal projects",
@@ -28,12 +28,15 @@ const workData = [
         "Gatsby, React, Craft, WordPress, Prismic, and Netlify ",
       "Communicate with multi-disciplinary teams of engineers, designers," +
         "producers, and clients on a daily basis",
+        
+      "Communicate with multi-disciplinary teams of engineers, designers," +
+        "producers, and clients on a daily basis",
     ],
   },
   {
-    place: "Dynammite",
-    title: "Engineer",
-    duration: "May 2018 - Present",
+    place: "DYNAMMITE",
+    title: "Mobile Developer & Engineering Manager",
+    duration: "May 2020 - Present",
     content: [
       "Write modern, performant, maintainable code for a " +
         "diverse array of client and internal projects",
@@ -48,7 +51,7 @@ const workData = [
 
 const WorkExperience = () => {
   const [currentIndex, setcurrentIndex] = useState(0);
-  
+  console.log(currentIndex);
   return (
     <div className="flex flex-col h-4/6 items-center justify-start">
       {/* Work Experience Header */}
@@ -66,18 +69,21 @@ const WorkExperience = () => {
           {workData.map((value, index) => {
             return (
               <button
+                onClick={() => {
+                  setcurrentIndex(index);
+                }}
                 key={index}
-                className="flex-1 bg-gray-800 text-green-500 px-20  mb-1 flex items-center justify-center"
+                className="h-20 bg-gray-800 text-green-500 px-20  mb-1 flex items-center justify-center transition-transform ease-in-out"
               >
-                <h1>{value.place}</h1>
+                <h1 className="font-medium opacity-80">{value.place}</h1>
               </button>
             );
           })}
         </ul>
         <WorkContent
-          title={workData[0].title}
-          duration={workData[0].duration}
-          contentList={workData[0].content}
+          title={workData[currentIndex].title}
+          duration={workData[currentIndex].duration}
+          contentList={workData[currentIndex].content}
         />
       </div>
     </div>
