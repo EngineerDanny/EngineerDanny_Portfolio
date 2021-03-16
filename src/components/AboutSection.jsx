@@ -54,8 +54,10 @@ const AboutSection = () => {
             </td>
           </tr>
           <tr className="flex flex-row content-center m-3 justify-between">
-            <td className="max-w-md">Developer, back-endendendendendend</td>
-            <td className=" w-9/12 flex rounded-md bg-white">
+            <td className=" w-10">
+              Developer, backbackbackbackbackbackback-end
+            </td>
+            <td className=" h-5 w-9/12 flex rounded-md bg-white">
               <div className="rounded-l-md w-2/5 bg-green-500"></div>
             </td>
             <td>
