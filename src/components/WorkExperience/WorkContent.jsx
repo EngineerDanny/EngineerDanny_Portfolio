@@ -3,15 +3,7 @@ import React from "react";
 const WorkContent = ({ title, duration, contentList }) => {
   return (
     <div className="flex flex-col">
-      <h3>
-        <span>Engineer</span>
-        <span className="">
-          &nbsp;@&nbsp;
-          <a href="https://www.farmhouse.com/" rel="noopener noreferrer">
-            Farmhouse
-          </a>
-        </span>
-      </h3>
+      <h1>Engineer</h1>
       {/* Job duration */}
       <p className="">May 2018 - Present</p>
       <ul>

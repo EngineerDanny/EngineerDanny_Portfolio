@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import WorkContent from "./WorkContent";
 
 const workData = [
   {
@@ -70,37 +71,11 @@ const WorkExperience = () => {
             <h1>Dynammite</h1>
           </li>
         </ul>
-
-        {/* Job Content */}
-        <div className="flex flex-col">
-          {/* Job title */}
-          <h3>
-            <span>Engineer</span>
-            <span className="">
-              &nbsp;@&nbsp;
-              <a href="https://www.farmhouse.com/" rel="noopener noreferrer">
-                Farmhouse
-              </a>
-            </span>
-          </h3>
-          {/* Job duration */}
-          <p className="">May 2018 - Present</p>
-          <ul>
-            <li>
-              Write modern, performant, maintainable code for a diverse array of
-              client and internal projects
-            </li>
-            <li>
-              Work with a variety of different languages, platforms, frameworks,
-              and content management systems such as JavaScript, TypeScript,
-              Gatsby, React, Craft, WordPress, Prismic, and Netlify
-            </li>
-            <li>
-              Communicate with multi-disciplinary teams of engineers, designers,
-              producers, and clients on a daily basis
-            </li>
-          </ul>
-        </div>
+        <WorkContent
+          title={workData[0].title}
+          duration={workData[0].duration}
+          contentList={workData[0].content}
+        />
       </div>
     </div>
   );
