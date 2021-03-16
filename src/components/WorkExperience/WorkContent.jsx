@@ -8,7 +8,7 @@ const WorkContent = ({ title, duration, contentList }) => {
       <p className=" py-2">{duration}</p>
       <ul>
         {contentList.map((item, index) => (
-          <li key={index} className="pb-2">✅ {item}</li>
+          <li key={index} className="pb-2 text-base font-light opacity-80">✅ {item}</li>
         ))}
       </ul>
     </div>
