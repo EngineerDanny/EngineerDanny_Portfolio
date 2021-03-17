@@ -1,6 +1,6 @@
 import NavBar from "./components/NavBar";
 import IntroHeader from "./components/IntroHeader";
-import AboutSection from "./components/AboutSection";
+import AboutSection from "./components/About/AboutSection";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
 import Projects from "./components/Projects/Projects";
 
