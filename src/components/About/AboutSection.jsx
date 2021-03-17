@@ -4,6 +4,7 @@ import express from "../../assets/techs/express.png";
 import mongo from "../../assets/techs/mongo.png";
 import node from "../../assets/techs/node.png";
 import react from "../../assets/techs/react.svg";
+import TechTile from "./TechTile";
 
 const AboutSection = () => {
   const techImages = [express, mongo, node, react];
@@ -33,45 +34,7 @@ const AboutSection = () => {
         <p>These are the programming languages I am familiar with :</p>
 
         <tbody className="align-middle table-row-group w-full">
-          <tr className="flex flex-row m-3 h-12">
-            <td className="w-1/12">Assembly Language</td>
-            <td className="w-9/12 flex rounded-md bg-white">
-              <div className="rounded-l-md w-11/12 bg-green-500"></div>
-            </td>
-            <td className="w-1/12">
-              <span>55.2%</span>
-            </td>
-          </tr>
-
-          <tr className="flex flex-row m-3 h-12">
-            <td className="w-1/12">AssemblyAssemblyAssemblyAssembly</td>
-            <td className="w-9/12 flex rounded-md bg-white">
-              <div className="rounded-l-md w-11/12 bg-green-500"></div>
-            </td>
-            <td className="w-1/12">
-              <span>55.2%</span>
-            </td>
-          </tr>
-
-          <tr className="flex flex-row m-3 justify-evenly h-5">
-            <td className="w-1/12">Nodejs</td>
-            <td className="w-9/12 flex rounded-md bg-white">
-              <div className="rounded-l-md w-2/5 bg-green-500"></div>
-            </td>
-            <td className="w-1/12">
-              <span>55.2%</span>
-            </td>
-          </tr>
-
-          <tr className="flex flex-row m-3 justify-evenly h-5">
-            <td className="w-1/12">React</td>
-            <td className="w-9/12 flex rounded-md bg-white">
-              <div className="rounded-l-md w-2/5 bg-green-500"></div>
-            </td>
-            <td className="w-1/12">
-              <span>55.2%</span>
-            </td>
-          </tr>
+          <TechTile title="Assembly Language" />
         </tbody>
 
         <div className="flex justify-center">
