@@ -8,12 +8,13 @@ const TechTile = ({ title, percentage }) => {
       </td>
       <td className="flex rounded-lg bg-white w-full">
         <div
-          className="rounded-l-lg bg-green-500"
+          className="rounded-l-lg origin-left bg-gradient-to-br from-green-200 to-green-900"
           style={{ width: percentage }}
         ></div>
+      
       </td>
       <td className="w-1/12 ml-3 self-center text-xs opacity-80">
-        <span>55.2%</span>
+        <span>{percentage}</span>
       </td>
     </tr>
   );
