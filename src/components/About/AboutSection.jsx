@@ -34,14 +34,14 @@ const AboutSection = () => {
           <p className="font-semibold text-lg opacity-80 mb-8">
             These are the programming languages I am familiar with :
           </p>
-          <TechTile title="Assembly Language" />
-          <TechTile title="MATLAB" />
-          <TechTile title="C" />
-          <TechTile title="Java" />
-          <TechTile title="Dart" />
-          <TechTile title="JS/TS" />
-          <TechTile title="Swift/Obj C" />
-          <TechTile title="Python" />
+          <TechTile title="Assembly Language" percentage="50%" />
+          <TechTile title="MATLAB" percentage="60%" />
+          <TechTile title="C" percentage="70%" />
+          <TechTile title="Java" percentage="90%" />
+          <TechTile title="Dart" percentage="99%" />
+          <TechTile title="JS/TS"  percentage="99%"/>
+          <TechTile title="Swift/Obj C" percentage="50%" />
+          <TechTile title="Python" percentage="70%"/>
         </tbody>
 
         <p className="self-start text-lg font-semibold opacity-80 mb-12">
