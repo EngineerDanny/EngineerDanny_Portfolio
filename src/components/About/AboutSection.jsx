@@ -35,6 +35,13 @@ const AboutSection = () => {
 
         <tbody className="align-middle table-row-group w-full">
           <TechTile title="Assembly Language" />
+          <TechTile title="MATLAB" />
+          <TechTile title="C" />
+          <TechTile title="Java" />
+          <TechTile title="Dart" />
+          <TechTile title="Javascript/Typescript" />
+          <TechTile title="Swift/Obj C" />
+          <TechTile title="Python" />
         </tbody>
 
         <div className="flex justify-center">

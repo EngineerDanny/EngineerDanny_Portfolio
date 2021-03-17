@@ -14,7 +14,7 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section className="h-screen">
+      <section className="">
         <AboutSection />
       </section>
 
