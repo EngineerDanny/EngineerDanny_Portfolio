@@ -7,7 +7,18 @@ import react from "../../assets/techs/react.svg";
 import TechTile from "./TechTile";
 
 const AboutSection = () => {
-  const techImages = [express, mongo, node, react];
+  const techImages = [
+    express,
+    mongo,
+    node,
+    react,
+    express,
+    mongo,
+    node,
+    react,
+    react,
+    react,
+  ];
 
   return (
     <div className="flex flex-col justify-start items-center h-4/6">
@@ -48,12 +59,12 @@ const AboutSection = () => {
           These are the frameworks I am familiar with :
         </p>
 
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-5 gap-2">
           {techImages.map((tech, index) => (
             <span
               key={index}
-              className={`h-40 w-40 bg-white shadow-xl  ml-2  rounded-full flex justify-center items-center p-5 m-2 ${
-                index % 2 !== 0 ? "animate-bounce" : "animate-bounceFirst"
+              className={`h-40 w-40 bg-white shadow-xl ml-2 rounded-full flex justify-center items-center p-5 m-2 ${
+                index % 2 !== 0 ? "" : " animate-pulse"
               }`}
             >
               <img src={tech} alt="" />
