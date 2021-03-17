@@ -42,7 +42,7 @@ const AboutSection = () => {
           <br />
         </p>
         <tbody className="align-middle table-row-group w-full">
-          <p className="font-semibold text-lg opacity-80 mb-8">
+          <p className="font-bold text-xl opacity-80 my-8">
             These are the programming languages I am familiar with :
           </p>
           <TechTile title="Assembly Language" percentage="70%" />
@@ -55,11 +55,11 @@ const AboutSection = () => {
           <TechTile title="Python" percentage="80%" />
         </tbody>
 
-        <p className="self-start text-lg font-semibold opacity-80 mb-12">
+        <p className="self-start text-xl font-bold opacity-80 my-8">
           These are the frameworks I am familiar with :
         </p>
 
-        <div className="grid grid-cols-5 gap-y-2">
+        <div className="grid grid-cols-5 gap-7">
           {techImages.map((tech, index) => (
             <span
               key={index}
