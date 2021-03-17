@@ -44,7 +44,7 @@ const AboutSection = () => {
           ))}
         </div>
         <tbody className="align-middle table-row-group w-full">
-          <tr className="flex flex-row m-3 justify-evenly">
+          <tr className="flex flex-row m-3 justify-evenly h-10">
             <td className=" w-9">Flutter</td>
             <td className=" w-9/12 max-w-xl flex rounded-md bg-white">
               <div className="rounded-l-md w-2/5 bg-green-500"></div>
@@ -54,7 +54,7 @@ const AboutSection = () => {
             </td>
           </tr>
 
-          <tr className="flex flex-row m-3 justify-evenly">
+          <tr className="flex flex-row m-3 justify-evenly h-10">
             <td className="w-9">Node js</td>
             <td className=" w-9/12 max-w-xl flex rounded-md bg-white">
               <div className="rounded-l-md w-2/5 bg-green-500"></div>
@@ -64,7 +64,7 @@ const AboutSection = () => {
             </td>
           </tr>
 
-          <tr className="flex flex-row m-3 justify-evenly">
+          <tr className="flex flex-row m-3 justify-evenly h-10">
             <td className="w-9">React</td>
             <td className=" w-9/12 max-w-xl flex rounded-md bg-white">
               <div className="rounded-l-md w-2/5 bg-green-500"></div>
