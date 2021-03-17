@@ -51,7 +51,7 @@ const AboutSection = () => {
           <TechTile title="Java" percentage="90%" />
           <TechTile title="Dart" percentage="98%" />
           <TechTile title="JS/TS" percentage="98%" />
-          <TechTile title="Swift/Obj C" percentage="60%" />
+          <TechTile title="Swift/ObjC" percentage="60%" />
           <TechTile title="Python" percentage="80%" />
         </tbody>
 
@@ -59,12 +59,12 @@ const AboutSection = () => {
           These are the frameworks I am familiar with :
         </p>
 
-        <div className="grid grid-cols-5 gap-2">
+        <div className="grid grid-cols-5 gap-y-2">
           {techImages.map((tech, index) => (
             <span
               key={index}
               className={`h-40 w-40 bg-white shadow-xl ml-2 rounded-full flex justify-center items-center p-5 m-2 ${
-                index % 2 !== 0 ? "" : " animate-pulse"
+                index % 2 !== 0 ? "" : "animate-pulse"
               }`}
             >
               <img src={tech} alt="" />

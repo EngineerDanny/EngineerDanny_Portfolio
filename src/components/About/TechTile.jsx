@@ -13,9 +13,6 @@ const TechTile = ({ title, percentage }) => {
         ></div>
       
       </td>
-      <td className="w-1/12 ml-3 self-center text-xs opacity-80">
-        <span>{percentage}</span>
-      </td>
     </tr>
   );
 };
