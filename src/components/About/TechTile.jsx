@@ -3,7 +3,7 @@ import React from "react";
 const TechTile = ({ title, percentage }) => {
   return (
     <tr className="flex flex-row mb-5 h-5">
-      <td className="w-1/12 mr-3 self-center  text-xs font-bold opacity-80">
+      <td className="w-1/12 mr-3 self-center text-xs font-bold opacity-80">
         {title}
       </td>
       <td className="flex rounded-lg bg-white w-full">

@@ -39,20 +39,20 @@ const AboutSection = () => {
           <TechTile title="C" percentage="85%" />
           <TechTile title="Java" percentage="90%" />
           <TechTile title="Dart" percentage="98%" />
-          <TechTile title="JS/TS"  percentage="98%"/>
+          <TechTile title="JS/TS" percentage="98%" />
           <TechTile title="Swift/Obj C" percentage="60%" />
-          <TechTile title="Python" percentage="80%"/>
+          <TechTile title="Python" percentage="80%" />
         </tbody>
 
         <p className="self-start text-lg font-semibold opacity-80 mb-12">
           These are the frameworks I am familiar with :
         </p>
 
-        <div className="flex justify-center">
+        <div className="grid grid-cols-4">
           {techImages.map((tech, index) => (
             <span
               key={index}
-              className={` h-40 w-40 bg-white shadow-xl  ml-2  rounded-full flex justify-center items-center p-5 m-2 ${
+              className={`h-40 w-40 bg-white shadow-xl  ml-2  rounded-full flex justify-center items-center p-5 m-2 ${
                 index % 2 !== 0 ? "animate-bounce" : "animate-bounceFirst"
               }`}
             >
