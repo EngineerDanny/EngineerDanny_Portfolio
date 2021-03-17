@@ -18,7 +18,7 @@ const AboutSection = () => {
       </div>
       {/* Details */}
       <div className="flex flex-col max-w-4xl items-center">
-        <p className="text-base font-light opacity-80 mb-12">
+        <p className="text-base font-light opacity-80 ">
           Hi! I'm Daniel, a FullStack engineer based in KNUST, Ghana. I enjoy
           creating things that live on the internet, whether that be websites,
           applications, or anything in between. <br />
@@ -27,22 +27,26 @@ const AboutSection = () => {
           performant experiences. Shortly after graduating from Northeastern
           University, I joined the engineering team at Upstatement where I work
           on a wide variety of interesting and meaningful projects on a daily
-          basis.
+          basis. <br />
           <br />
-          <br /> Here are a few technologies I've been working with recently:
         </p>
-        <p>These are the programming languages I am familiar with :</p>
-
         <tbody className="align-middle table-row-group w-full">
+          <p className="font-semibold text-lg opacity-80 mb-8">
+            These are the programming languages I am familiar with :
+          </p>
           <TechTile title="Assembly Language" />
           <TechTile title="MATLAB" />
           <TechTile title="C" />
           <TechTile title="Java" />
           <TechTile title="Dart" />
-          <TechTile title="Javascript/Typescript" />
+          <TechTile title="JS/TS" />
           <TechTile title="Swift/Obj C" />
           <TechTile title="Python" />
         </tbody>
+
+        <p className="self-start text-lg font-semibold opacity-80 mb-12">
+          These are the frameworks I am familiar with :
+        </p>
 
         <div className="flex justify-center">
           {techImages.map((tech, index) => (
