@@ -4,7 +4,16 @@ import AboutSection from "./components/About/AboutSection";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
 import Projects from "./components/Projects/Projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, ma } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faGitlab,
+  faTwitter,
+  faInstagram,
+  faWhatsapp,
+  faTelegram,
+} from "@fortawesome/free-brands-svg-icons";
+
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -16,10 +25,18 @@ function App() {
 
       <NavBar />
       <section className="h-screen flex flex-row items-center">
-        <div className="flex flex-row">
-          <div className="bg-white w-1  h-5 mx-10"></div>
-          <i className="fab fa-gitlab"></i>
-          <div className="bg-white w-1  h-5 mx-10"></div>
+        <div className="flex flex-col items-center mx-12">
+          <div className="bg-white w-1  h-28  my-3"></div>
+          <FontAwesomeIcon icon={faGithub} size="2x" className="mb-2 w-5 h-5" />
+          <FontAwesomeIcon icon={faGitlab} size="2x" className="mb-2" />
+
+          <FontAwesomeIcon icon={faTwitter} size="2x" className="mb-2" />
+          <FontAwesomeIcon icon={faInstagram} size="2x" className="mb-2" />
+          <FontAwesomeIcon icon={faWhatsapp} size="2x" className="mb-2" />
+          <FontAwesomeIcon icon={faTelegram} size="2x" className="mb-2" />
+          <FontAwesomeIcon icon={faEnvelope} size="2x" className="mb-2" />
+
+          <div className="bg-white w-1  h-28 my-3"></div>
         </div>
 
         <IntroHeader />
