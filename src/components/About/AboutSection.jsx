@@ -4,6 +4,13 @@ import express from "../../assets/techs/express.png";
 import mongo from "../../assets/techs/mongo.png";
 import node from "../../assets/techs/node.png";
 import react from "../../assets/techs/react.svg";
+
+import android from "../../assets/techs/android.svg";
+import flutter from "../../assets/techs/flutter.svg";
+import firebase from "../../assets/techs/firebase.png";
+import gcloud from "../../assets/techs/gcloud.png";
+import iOS from "../../assets/techs/iOS.png";
+
 import TechTile from "./TechTile";
 
 const AboutSection = () => {
@@ -12,12 +19,11 @@ const AboutSection = () => {
     mongo,
     node,
     react,
-    express,
-    mongo,
-    node,
-    react,
-    react,
-    react,
+    android,
+    flutter,
+    firebase,
+    gcloud,
+    iOS,
   ];
   //flutter,react,next,android,iOS
   //firebase,gcloud,node,mongodb,express
