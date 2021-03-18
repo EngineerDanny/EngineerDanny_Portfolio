@@ -70,14 +70,14 @@ const AboutSection = () => {
 
         <div className="grid grid-cols-5 gap-7 mb-16">
           {techImages.map((tech, index) => (
-            <span
+            <div
               key={index}
-              className={`h-40 w-40 bg-white shadow-xl ml-2 rounded-full flex justify-center items-center p-5 m-2 ${
+              className={`h-40 w-40 bg-white shadow-2xl rounded-full flex justify-center items-center ${
                 index % 2 !== 0 ? "" : "animate-pulse"
               }`}
             >
               <img src={tech} className="h-24 w-24 object-fill" alt="" />
-            </span>
+            </div>
           ))}
         </div>
       </div>
