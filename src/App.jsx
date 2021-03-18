@@ -3,6 +3,7 @@ import IntroHeader from "./components/IntroHeader";
 import AboutSection from "./components/About/AboutSection";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
 import Projects from "./components/Projects/Projects";
+import FontAwesome from "react-fontawesome";
 
 function App() {
   return (
@@ -14,7 +15,12 @@ function App() {
 
       <NavBar />
       <section className="h-screen flex flex-row items-center">
-        <div className="bg-white w-1  h-36 mx-10"></div>
+        <div className="flex flex-row">
+          <div className="bg-white w-1  h-5 mx-10"></div>
+          <FontAwesome icon="rocket"  />
+          <div className="bg-white w-1  h-5 mx-10"></div>
+        </div>
+
         <IntroHeader />
       </section>
 
