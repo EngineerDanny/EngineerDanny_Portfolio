@@ -13,8 +13,7 @@ import {
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -34,7 +33,7 @@ function App() {
             className="hover:text-green-600 hover:opacity-100"
           >
             <FontAwesomeIcon
-              icon={faGithub}   
+              icon={faGithub}
               size="2x"
               className="mb-4 w-4 h-5 opacity-80"
             />
@@ -70,7 +69,10 @@ function App() {
             size="2x"
             className="w-4 h-5 opacity-80"
           />
-          <div className="bg-white  h-1/3   my-3" style={{ width: "1px" }}></div>
+          <div
+            className="bg-white  h-1/3   my-3"
+            style={{ width: "1px" }}
+          ></div>
         </div>
 
         <IntroHeader />
