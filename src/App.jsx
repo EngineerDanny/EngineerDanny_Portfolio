@@ -26,17 +26,36 @@ function App() {
       <NavBar />
       <section className="h-screen flex flex-row items-center">
         <div className="flex flex-col items-center mx-12">
-          <div className="bg-white w-1  h-28  my-3"></div>
-          <FontAwesomeIcon icon={faGithub} size="2x" className="mb-2 w-5 h-5" />
-          <FontAwesomeIcon icon={faGitlab} size="2x" className="mb-2" />
+          <div className="bg-white  h-28  my-3" style={{ width: "1px" }}></div>
+          <FontAwesomeIcon icon={faGithub} size="2x" className="mb-2 w-5 h-6" />
+          <FontAwesomeIcon icon={faGitlab} size="2x" className="mb-2 w-5 h-6" />
 
-          <FontAwesomeIcon icon={faTwitter} size="2x" className="mb-2" />
-          <FontAwesomeIcon icon={faInstagram} size="2x" className="mb-2" />
-          <FontAwesomeIcon icon={faWhatsapp} size="2x" className="mb-2" />
-          <FontAwesomeIcon icon={faTelegram} size="2x" className="mb-2" />
-          <FontAwesomeIcon icon={faEnvelope} size="2x" className="mb-2" />
-
-          <div className="bg-white w-1  h-28 my-3"></div>
+          <FontAwesomeIcon
+            icon={faTwitter}
+            size="2x"
+            className="mb-2 w-5 h-6"
+          />
+          <FontAwesomeIcon
+            icon={faInstagram}
+            size="2x"
+            className="mb-2 w-5 h-6"
+          />
+          <FontAwesomeIcon
+            icon={faWhatsapp}
+            size="2x"
+            className="mb-2 w-5 h-6"
+          />
+          <FontAwesomeIcon
+            icon={faTelegram}
+            size="2x"
+            className="mb-2 w-5 h-6"
+          />
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            size="2x"
+            className="mb-2 w-5 h-6"
+          />
+          <div className="bg-white  h-28  my-3" style={{ width: "1px" }}></div>
         </div>
 
         <IntroHeader />
