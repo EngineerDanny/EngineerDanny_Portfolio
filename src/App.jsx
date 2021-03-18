@@ -15,6 +15,8 @@ import {
 
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
+import githubbrand from "./assets/github-brands.svg";
+
 function App() {
   return (
     <div className=" bg-navy text-white box-border mx-auto">
@@ -25,35 +27,46 @@ function App() {
 
       <NavBar />
       <section className="h-screen flex flex-row items-center">
-        <div className="flex flex-col items-center mx-12">
-          <div className="bg-white  h-28  my-3" style={{ width: "1px" }}></div>
-          <FontAwesomeIcon icon={faGithub} size="2x" className="mb-2 w-5 h-6" />
-          <FontAwesomeIcon icon={faGitlab} size="2x" className="mb-2 w-5 h-6" />
+        <div className="flex flex-col items-center mr-20 ml-10">
+          <div className="bg-white  h-28  my-3 " style={{ width: "1px" }}></div>
 
+          <a href="github.io" className="text-red">
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="2x"
+              className="mb-4 w-4 h-5 opacity-80"
+            />
+          </a>
+
+          <FontAwesomeIcon
+            icon={faGitlab}
+            size="2x"
+            className="mb-4 w-4 h-5 opacity-80"
+          />
           <FontAwesomeIcon
             icon={faTwitter}
             size="2x"
-            className="mb-2 w-5 h-6"
+            className="mb-4 w-4 h-5 opacity-80"
           />
           <FontAwesomeIcon
             icon={faInstagram}
             size="2x"
-            className="mb-2 w-5 h-6"
+            className="mb-4 w-4 h-5 opacity-80"
           />
           <FontAwesomeIcon
             icon={faWhatsapp}
             size="2x"
-            className="mb-2 w-5 h-6"
+            className="mb-4 w-4 h-5 opacity-80"
           />
           <FontAwesomeIcon
             icon={faTelegram}
             size="2x"
-            className="mb-2 w-5 h-6"
+            className="mb-4 w-4 h-5 opacity-80"
           />
           <FontAwesomeIcon
             icon={faEnvelope}
             size="2x"
-            className="mb-2 w-5 h-6"
+            className="w-4 h-5 opacity-80"
           />
           <div className="bg-white  h-28  my-3" style={{ width: "1px" }}></div>
         </div>
