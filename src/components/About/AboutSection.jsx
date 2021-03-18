@@ -15,6 +15,8 @@ import TechTile from "./TechTile";
 
 const AboutSection = () => {
   const techImages = [
+    flutter,
+    react,
     express,
     mongo,
     node,
