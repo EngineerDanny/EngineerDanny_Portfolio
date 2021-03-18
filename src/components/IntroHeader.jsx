@@ -32,7 +32,7 @@ const IntroHeader = () => {
       </div>
       <img
         src={profilePic}
-        className="w-60 h-60  rounded-full object-cover"
+        className="w-64 h-64 rounded-full object-cover mx-7"
         alt="MyPicture"
       />
     </div>
