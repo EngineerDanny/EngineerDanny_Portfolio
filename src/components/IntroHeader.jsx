@@ -4,7 +4,7 @@ import Typical from "react-typical";
 
 const IntroHeader = () => {
   return (
-    <div className="flex flex-row items-center justify-evenly h-full">
+    <div className="flex flex-row items-center h-full">
       <div className="flex flex-col justify-evenly h-4/6">
         <h1 className="text-md text-green-300">
           <Typical
