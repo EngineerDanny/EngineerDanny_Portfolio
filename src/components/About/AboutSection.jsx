@@ -10,6 +10,7 @@ import flutter from "../../assets/techs/flutter.svg";
 import firebase from "../../assets/techs/firebase.png";
 import gcloud from "../../assets/techs/gcloud.png";
 import iOS from "../../assets/techs/iOS.png";
+import next from "../../assets/techs/next.svg";
 
 import TechTile from "./TechTile";
 
@@ -17,19 +18,16 @@ const AboutSection = () => {
   const techImages = [
     flutter,
     react,
-    express,
-    mongo,
-    node,
-    react,
+    next,
     android,
-    flutter,
+    iOS,
     firebase,
     gcloud,
-    iOS,
+    node,
+    mongo,
+    express
   ];
-  //flutter,react,next,android,iOS
-  //firebase,gcloud,node,mongodb,express
-  
+
 
   return (
     <div className="flex flex-col justify-start items-center h-4/6">
