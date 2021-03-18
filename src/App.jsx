@@ -12,7 +12,6 @@ import {
   faWhatsapp,
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
-
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
@@ -26,7 +25,7 @@ function App() {
       <NavBar />
       <section className="h-screen flex flex-row items-center">
         <div className="flex flex-col items-center mr-20 ml-10 h-full">
-          <div className="bg-white h-1/3  my-3 " style={{ width: "1px" }}></div>
+          <div className="bg-white h-1/3  my-3 opacity-80 rounded-full" style={{ width: "1px" }}></div>
 
           <a
             href="github.io"
@@ -70,7 +69,7 @@ function App() {
             className="w-4 h-5 opacity-80"
           />
           <div
-            className="bg-white  h-1/3   my-3"
+            className="bg-white h-1/3 rounded-full my-3 opacity-80"
             style={{ width: "1px" }}
           ></div>
         </div>
