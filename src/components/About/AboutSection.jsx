@@ -19,6 +19,9 @@ const AboutSection = () => {
     react,
     react,
   ];
+  //flutter,react,next,android,iOS
+  //firebase,gcloud,node,mongodb,express
+  
 
   return (
     <div className="flex flex-col justify-start items-center h-4/6">
@@ -59,7 +62,7 @@ const AboutSection = () => {
           These are the frameworks I am familiar with :
         </p>
 
-        <div className="grid grid-cols-5 gap-7">
+        <div className="grid grid-cols-5 gap-7 mb-16">
           {techImages.map((tech, index) => (
             <span
               key={index}

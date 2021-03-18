@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@utilities {
+  @apply {
+    .custom-transition {
+      transition-property: width;
+      transition-duration: 4s;
+      transition-timing-function: ease-in;
+      transition-delay: 4s;
+      width: 0%;
+    }
+
+    custom-transition:focus-visible {
+      width: 100%;
+    }
+  }
+}
