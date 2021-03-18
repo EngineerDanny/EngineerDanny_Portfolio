@@ -76,7 +76,7 @@ const AboutSection = () => {
                 index % 2 !== 0 ? "" : "animate-pulse"
               }`}
             >
-              <img src={tech} alt="" />
+              <img src={tech} className="h-24 w-24 object-fill" alt="" />
             </span>
           ))}
         </div>
