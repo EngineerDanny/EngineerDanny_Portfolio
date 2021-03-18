@@ -15,7 +15,6 @@ import {
 
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
-import githubbrand from "./assets/github-brands.svg";
 
 function App() {
   return (
@@ -27,12 +26,15 @@ function App() {
 
       <NavBar />
       <section className="h-screen flex flex-row items-center">
-        <div className="flex flex-col items-center mr-20 ml-10">
-          <div className="bg-white  h-28  my-3 " style={{ width: "1px" }}></div>
+        <div className="flex flex-col items-center mr-20 ml-10 h-full">
+          <div className="bg-white h-1/3  my-3 " style={{ width: "1px" }}></div>
 
-          <a href="github.io" className="text-red">
+          <a
+            href="github.io"
+            className="hover:text-green-600 hover:opacity-100"
+          >
             <FontAwesomeIcon
-              icon={faGithub}
+              icon={faGithub}   
               size="2x"
               className="mb-4 w-4 h-5 opacity-80"
             />
@@ -68,7 +70,7 @@ function App() {
             size="2x"
             className="w-4 h-5 opacity-80"
           />
-          <div className="bg-white  h-28  my-3" style={{ width: "1px" }}></div>
+          <div className="bg-white  h-1/3   my-3" style={{ width: "1px" }}></div>
         </div>
 
         <IntroHeader />
