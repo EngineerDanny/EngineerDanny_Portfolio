@@ -8,25 +8,30 @@ function App() {
   return (
     <div className=" bg-navy text-white box-border mx-auto">
       {/* Home Section */}
-      <section className="h-screen flex flex-col justify-between">
-        <NavBar />
+      {/* <div className="flex flex-row" >
+        
+      </div> */}
+
+      <NavBar />
+      <section className="h-screen flex flex-row items-center">
+        <div className="bg-white w-1  h-36 mx-10"></div>
         <IntroHeader />
       </section>
 
       {/* About Section */}
-      <section className="">
+      {/* <section className="">
         <AboutSection />
-      </section>
+      </section> */}
 
       {/* Work Experience Section */}
-      <section className="h-screen">
+      {/* <section className="h-screen">
         <WorkExperience />
-      </section>
+      </section> */}
 
-       {/* Projects Section */}
-       <section className="h-screen">
+      {/* Projects Section */}
+      {/* <section className="h-screen">
         <Projects />
-      </section>
+      </section> */}
     </div>
   );
 }
