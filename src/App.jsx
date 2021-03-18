@@ -3,7 +3,8 @@ import IntroHeader from "./components/IntroHeader";
 import AboutSection from "./components/About/AboutSection";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
 import Projects from "./components/Projects/Projects";
-import FontAwesome from "react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee, ma } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <section className="h-screen flex flex-row items-center">
         <div className="flex flex-row">
           <div className="bg-white w-1  h-5 mx-10"></div>
-          <FontAwesome icon="rocket"  />
+          <i className="fab fa-gitlab"></i>
           <div className="bg-white w-1  h-5 mx-10"></div>
         </div>
 
