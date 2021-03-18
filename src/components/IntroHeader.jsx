@@ -25,7 +25,8 @@ const IntroHeader = () => {
         </p>
         <a
           href="mailto:agyapongdaniel7777@gmail.com"
-          className="text-base p-2 border-2 border-green-500 rounded-md text-green-500 w-36 text-center"
+          className="text-base p-2 border-2 border-green-500 rounded-md 
+          text-green-500 w-36 text-center hover:bg-green-500 hover:text-white"
         >
           Contact Me
         </a>
