@@ -14,6 +14,33 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
+const contactDetailList = [
+  {
+    icon: faGithub,
+    link: "github.io",
+  },
+  {
+    icon: faGitlab,
+    link: "github.io",
+  },
+  {
+    icon: faTwitter,
+    link: "github.io",
+  },
+  {
+    icon: faInstagram,
+    link: "github.io",
+  },
+  {
+    icon: faTelegram,
+    link: "github.io",
+  },
+  {
+    icon: faEnvelope,
+    link: "github.io",
+  },
+];
+
 function App() {
   return (
     <div className=" bg-navy text-white box-border mx-auto">
@@ -25,11 +52,14 @@ function App() {
       <NavBar />
       <section className="h-screen flex flex-row items-center">
         <div className="flex flex-col items-center mr-20 ml-10 h-full">
-          <div className="bg-white h-1/3  my-3 opacity-80 rounded-full" style={{ width: "1px" }}></div>
+          <div
+            className="bg-white h-1/3  my-3 opacity-80 rounded-full"
+            style={{ width: "1px" }}
+          ></div>
 
           <a
             href="github.io"
-            className="hover:text-green-600 hover:opacity-100"
+            className="hover:text-green-500 hover:opacity-100"
           >
             <FontAwesomeIcon
               icon={faGithub}
