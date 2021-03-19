@@ -3,47 +3,7 @@ import IntroHeader from "./components/IntroHeader";
 import AboutSection from "./components/About/AboutSection";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
 import Projects from "./components/Projects/Projects";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faGitlab,
-  faTwitter,
-  faInstagram,
-  faWhatsapp,
-  faTelegram,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
-const contactDetailList = [
-  {
-    icon: faGithub,
-    link: "github.io",
-  },
-  {
-    icon: faGitlab,
-    link: "github.io",
-  },
-  {
-    icon: faTwitter,
-    link: "github.io",
-  },
-  {
-    icon: faInstagram,
-    link: "github.io",
-  },
-  {
-    icon: faWhatsapp,
-    link: "github.io",
-  },
-  {
-    icon: faTelegram,
-    link: "github.io",
-  },
-  {
-    icon: faEnvelope,
-    link: "github.io",
-  },
-];
+import ContactSideBar from "./components/ContactSideBar";
 
 function App() {
   return (
@@ -61,21 +21,7 @@ function App() {
             style={{ width: "1px" }}
           ></span>
 
-          {contactDetailList.map((value, index) => {
-            return (
-              <a
-                key={index}
-                href={value.link}
-                className="hover:text-green-500 hover:opacity-100"
-              >
-                <FontAwesomeIcon
-                  icon={value.icon}
-                  size="2x"
-                  className="mb-4 w-4 h-5 opacity-80"
-                />
-              </a>
-            );
-          })}
+          <ContactSideBar />
 
           <span
             className="bg-white h-1/3 rounded-full mb-3 opacity-80"
