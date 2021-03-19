@@ -24,7 +24,7 @@ const NavBar = () => {
           <Link to="/projects">Work</Link>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <Link to="/#contact">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
         <li class="mx-2">
           <button
