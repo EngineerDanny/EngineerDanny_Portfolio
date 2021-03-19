@@ -33,6 +33,13 @@ function App() {
             </section>
           </Route>
 
+          <Route path="/contact">
+            <NavBar />
+            <section className="h-screen1">
+              <ContactSection />
+            </section>
+          </Route>
+
           <Route path="/">
             <NavBar />
             <section className="h-screen flex flex-row items-center">
