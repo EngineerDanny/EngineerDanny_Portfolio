@@ -35,7 +35,7 @@ function App() {
 
           <Route path="/contact">
             <NavBar />
-            <section className="h-screen1">
+            <section className="h-screen">
               <ContactSection />
             </section>
           </Route>
