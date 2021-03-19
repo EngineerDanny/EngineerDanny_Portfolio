@@ -12,32 +12,31 @@ function App() {
       <div className=" bg-navy text-white box-border mx-auto">
         <Switch>
           <Route path="/about">
-            <section className="h-screen flex flex-row items-center">
-              <ContactSideBar />
-              <IntroHeader />
-            </section>
-          </Route>
-
-          <Route path="/users">
             <section className="">
               <AboutSection />
             </section>
           </Route>
 
-          <Route path="/">
+          <Route path="/experience">
             <section className="h-screen">
               <WorkExperience />
             </section>
           </Route>
 
-          <Route path="/">
+          <Route path="/projects">
             <section className="h-screen">
               <Projects />
             </section>
           </Route>
-        </Switch>
 
-        <NavBar />
+          <Route path="/">
+            <NavBar />
+            <section className="h-screen flex flex-row items-center">
+              <ContactSideBar />
+              <IntroHeader />
+            </section>
+          </Route>
+        </Switch>
       </div>
     </Router>
   );
