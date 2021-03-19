@@ -11,37 +11,33 @@ function App() {
   return (
     <Router>
       <div className=" bg-navy text-white box-border mx-auto">
+        <NavBar />
         <Switch>
           <Route path="/about">
-            <NavBar />
             <section className="">
               <AboutSection />
             </section>
           </Route>
 
           <Route path="/experience">
-            <NavBar />
             <section className="h-screen">
               <WorkExperience />
             </section>
           </Route>
 
           <Route path="/projects">
-            <NavBar />
             <section className="h-screen">
               <Projects />
             </section>
           </Route>
 
           <Route path="/contact">
-            <NavBar />
             <section className="h-screen">
               <ContactSection />
             </section>
           </Route>
 
           <Route path="/">
-            <NavBar />
             <section className="h-screen flex flex-row items-center">
               <ContactSideBar />
               <IntroHeader />
