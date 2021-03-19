@@ -32,6 +32,10 @@ const contactDetailList = [
     link: "github.io",
   },
   {
+    icon: faWhatsapp,
+    link: "github.io",
+  },
+  {
     icon: faTelegram,
     link: "github.io",
   },
@@ -57,47 +61,21 @@ function App() {
             style={{ width: "1px" }}
           ></div>
 
-          <a
-            href="github.io"
-            className="hover:text-green-500 hover:opacity-100"
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              size="2x"
-              className="mb-4 w-4 h-5 opacity-80"
-            />
-          </a>
+          {contactDetailList.map((value, index) => {
+            return (
+              <a
+                href={value.link}
+                className="hover:text-green-500 hover:opacity-100"
+              >
+                <FontAwesomeIcon
+                  icon={value.icon}
+                  size="2x"
+                  className="mb-4 w-4 h-5 opacity-80"
+                />
+              </a>
+            );
+          })}
 
-          <FontAwesomeIcon
-            icon={faGitlab}
-            size="2x"
-            className="mb-4 w-4 h-5 opacity-80"
-          />
-          <FontAwesomeIcon
-            icon={faTwitter}
-            size="2x"
-            className="mb-4 w-4 h-5 opacity-80"
-          />
-          <FontAwesomeIcon
-            icon={faInstagram}
-            size="2x"
-            className="mb-4 w-4 h-5 opacity-80"
-          />
-          <FontAwesomeIcon
-            icon={faWhatsapp}
-            size="2x"
-            className="mb-4 w-4 h-5 opacity-80"
-          />
-          <FontAwesomeIcon
-            icon={faTelegram}
-            size="2x"
-            className="mb-4 w-4 h-5 opacity-80"
-          />
-          <FontAwesomeIcon
-            icon={faEnvelope}
-            size="2x"
-            className="w-4 h-5 opacity-80"
-          />
           <div
             className="bg-white h-1/3 rounded-full my-3 opacity-80"
             style={{ width: "1px" }}
