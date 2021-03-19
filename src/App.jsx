@@ -12,18 +12,21 @@ function App() {
       <div className=" bg-navy text-white box-border mx-auto">
         <Switch>
           <Route path="/about">
+            <NavBar />
             <section className="">
               <AboutSection />
             </section>
           </Route>
 
           <Route path="/experience">
+            <NavBar />
             <section className="h-screen">
               <WorkExperience />
             </section>
           </Route>
 
           <Route path="/projects">
+            <NavBar />
             <section className="h-screen">
               <Projects />
             </section>

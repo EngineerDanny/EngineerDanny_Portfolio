@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/my-pic.jpg";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -11,19 +12,19 @@ const NavBar = () => {
       />
       <ul className="flex flex-row items-center">
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <a href="/#home">Home</a>
+          <Link to="/home">Home</Link>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <a href="/#about">About</a>
+          <Link href="/about">About</Link>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <a href="/#jobs">Experience</a>
+          <Link href="/#jobs">Experience</Link>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <a href="/#projects">Work</a>
+          <Link href="/#projects">Work</Link>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <a href="/#contact">Contact</a>
+          <Link href="/#contact">Contact</Link>
         </li>
         <li class="mx-2">
           <button
