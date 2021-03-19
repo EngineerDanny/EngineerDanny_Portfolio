@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/my-pic.jpg";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+  const [isScrolledUp, setisScrolledUp] = useState(true);
+
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      setisScrolledUp(false);
+    } else {
+      setisScrolledUp(true);
+    }
+    prevScrollpos = currentScrollPos;
+  };
+
   return (
-    <nav className="flex flex-row p-5 items-center justify-between">
+    <nav
+      className={` fixed ${
+        !isScrolledUp ? "top-0" : "-top-48"
+      } flex flex-row p-5 items-center justify-between transition-all w-full bg-gray-900`}
+    >
       <img
         src={logo}
         className=" w-10 h-10 rounded-3xl object-cover"

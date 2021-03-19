@@ -12,38 +12,41 @@ function App() {
     <Router>
       <div className=" bg-navy text-white box-border mx-auto">
         <NavBar />
-        <Switch>
-          <Route path="/about">
-            <section className="">
-              <AboutSection />
-            </section>
-          </Route>
+        <div className=" flex flex-row items-center">
+          <ContactSideBar />
+          <Switch>
+            <Route path="/about">
+              <section className="">
+                <AboutSection />
+              </section>
+            </Route>
 
-          <Route path="/experience">
-            <section className="h-screen">
-              <WorkExperience />
-            </section>
-          </Route>
+            <Route path="/experience">
+              <section className="h-screen">
+                <WorkExperience />
+              </section>
+            </Route>
 
-          <Route path="/projects">
-            <section className="h-screen">
-              <Projects />
-            </section>
-          </Route>
+            <Route path="/projects">
+              <section className="h-screen">
+                <Projects />
+              </section>
+            </Route>
 
-          <Route path="/contact">
-            <section className="h-screen">
-              <ContactSection />
-            </section>
-          </Route>
+            <Route path="/contact">
+              <section className="h-screen">
+                <ContactSection />
+              </section>
+            </Route>
 
-          <Route path="/">
-            <section className="h-screen flex flex-row items-center">
-              <ContactSideBar />
-              <IntroHeader />
-            </section>
-          </Route>
-        </Switch>
+            <Route path="/">
+              <section className="h-screen flex flex-row items-center">
+               
+                <IntroHeader />
+              </section>
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router>
   );
