@@ -11,6 +11,9 @@ const NavBar = () => {
       />
       <ul className="flex flex-row items-center">
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
+          <a href="/#home">Home</a>
+        </li>
+        <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
           <a href="/#about">About</a>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
@@ -23,8 +26,10 @@ const NavBar = () => {
           <a href="/#contact">Contact</a>
         </li>
         <li class="mx-2">
-          <button className="text-sm px-4 py-2 border-2 border-green-500 
-          rounded-full text-green-500 hover:bg-green-500 hover:text-white">
+          <button
+            className="text-sm px-4 py-2 border-2 border-green-500 s focus:outline-none
+          rounded-full text-green-500 hover:bg-green-500 hover:text-white"
+          >
             Resume
           </button>
         </li>
