@@ -3,6 +3,7 @@ import IntroHeader from "./components/IntroHeader";
 import AboutSection from "./components/About/AboutSection";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
 import Projects from "./components/Projects/Projects";
+import ContactSection from "./components/ContactSection";
 import ContactSideBar from "./components/ContactSideBar";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 

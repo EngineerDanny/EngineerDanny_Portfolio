@@ -15,16 +15,16 @@ const NavBar = () => {
           <Link to="/home">Home</Link>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <Link href="/about">About</Link>
+          <Link to="/about">About</Link>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <Link href="/#jobs">Experience</Link>
+          <Link to="/experience">Experience</Link>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <Link href="/#projects">Work</Link>
+          <Link to="/projects">Work</Link>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <Link href="/#contact">Contact</Link>
+          <Link to="/#contact">Contact</Link>
         </li>
         <li class="mx-2">
           <button
