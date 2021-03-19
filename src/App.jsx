@@ -56,14 +56,15 @@ function App() {
       <NavBar />
       <section className="h-screen flex flex-row items-center">
         <div className="flex flex-col items-center mr-20 ml-10 h-full">
-          <div
-            className="bg-white h-1/3  my-3 opacity-80 rounded-full"
+          <span
+            className="bg-white h-1/3  my-4 opacity-80 rounded-full"
             style={{ width: "1px" }}
-          ></div>
+          ></span>
 
           {contactDetailList.map((value, index) => {
             return (
               <a
+                key={index}
                 href={value.link}
                 className="hover:text-green-500 hover:opacity-100"
               >
@@ -76,10 +77,10 @@ function App() {
             );
           })}
 
-          <div
-            className="bg-white h-1/3 rounded-full my-3 opacity-80"
+          <span
+            className="bg-white h-1/3 rounded-full mb-3 opacity-80"
             style={{ width: "1px" }}
-          ></div>
+          ></span>
         </div>
 
         <IntroHeader />
