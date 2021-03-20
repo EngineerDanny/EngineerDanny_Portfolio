@@ -3,7 +3,8 @@ import logo from "../assets/my-pic.jpg";
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
-  const [isScrolledUp, setisScrolledUp] = useState(false);  
+  const [isScrolledUp, setisScrolledUp] = useState(false);
+
   let prevScrollPos = window.pageYOffset;
 
   window.onscroll = () => {
@@ -11,7 +12,14 @@ const NavBar = () => {
     setisScrolledUp(prevScrollPos <= currentScrollPos);
     prevScrollPos = currentScrollPos;
   };
-
+  //add style for when item(selected) is active
+  const activeStyle = {
+    fontWeight: "bold",
+    color: "rgba(16, 185, 129, 1)",
+    paddingBottom: "2px",
+    borderColor: "rgba(16, 185, 129, 1)",
+    borderBottomWidth: "1px",
+  };
   return (
     <nav
       className={` fixed ${
@@ -26,7 +34,9 @@ const NavBar = () => {
       />
       <ul className="flex flex-row items-center">
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <NavLink to="/home" calss>Home</NavLink>
+          <NavLink to="/home" activeStyle={activeStyle}>
+            Home
+          </NavLink>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
           <NavLink to="/about">About</NavLink>

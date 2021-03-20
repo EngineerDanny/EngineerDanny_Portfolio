@@ -9,9 +9,11 @@
     transition-timing-function: ease-in;
     transition-delay: 4s;
     width: 0%;
+    
   }
 
   custom-transition:focus-visible {
     width: 100%;
   }
 }
+
