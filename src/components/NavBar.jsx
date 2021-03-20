@@ -3,7 +3,7 @@ import logo from "../assets/my-pic.jpg";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-  const [isScrolledUp, setisScrolledUp] = useState(true);
+  const [isScrolledUp, setisScrolledUp] = useState(false);
 
   var prevScrollpos = window.pageYOffset;
   window.onscroll = () => {
