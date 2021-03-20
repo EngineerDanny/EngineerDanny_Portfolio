@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 
 const TechTile = ({ title, percentage }) => {
   return (
@@ -8,10 +8,11 @@ const TechTile = ({ title, percentage }) => {
         {title}
       </td>
       <td className="flex rounded-lg bg-white w-full">
-        <div
-          className="rounded-l-lg origin-left bg-gradient-to-br from-green-200 to-green-900 cus"
-          style={{ width: percentage }}
-        ></div>
+        <motion.div
+          animate={{width: percentage}}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="rounded-l-lg origin-left bg-gradient-to-br from-green-200 to-green-900"
+        ></motion.div>
       </td>
     </tr>
   );
