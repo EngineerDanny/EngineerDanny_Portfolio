@@ -13,10 +13,9 @@ const NavBar = () => {
     prevScrollPos = currentScrollPos;
   };
   //add style for when item(selected) is active
-  const activeStyle = {
-    fontWeight: "bold",
+  const mActiveStyle = {
     color: "rgba(16, 185, 129, 1)",
-    paddingBottom: "2px",
+    paddingBottom: "5px",
     borderColor: "rgba(16, 185, 129, 1)",
     borderBottomWidth: "1px",
   };
@@ -34,21 +33,29 @@ const NavBar = () => {
       />
       <ul className="flex flex-row items-center">
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <NavLink to="/home" activeStyle={activeStyle}>
+          <NavLink to="/" activeStyle={mActiveStyle}>
             Home
           </NavLink>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/about" activeStyle={mActiveStyle}>
+            About
+          </NavLink>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <NavLink to="/experience">Experience</NavLink>
+          <NavLink to="/experience" activeStyle={mActiveStyle}>
+            Experience
+          </NavLink>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <NavLink to="/projects">Work</NavLink>
+          <NavLink to="/projects" activeStyle={mActiveStyle}>
+            Work
+          </NavLink>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/contact" activeStyle={mActiveStyle}>
+            Contact
+          </NavLink>
         </li>
         <li class="mx-2">
           <button
