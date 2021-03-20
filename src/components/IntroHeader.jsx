@@ -33,7 +33,7 @@ const IntroHeader = () => {
       </div>
       <img
         src={profilePic}
-        className="w-64 h-64 rounded-full object-cover mr-16 ml-5"
+        className="w-64 h-64 rounded-full object-cover"
         alt="MyPicture"
       />
     </div>
