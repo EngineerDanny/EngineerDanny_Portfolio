@@ -5,15 +5,11 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   const [isScrolledUp, setisScrolledUp] = useState(false);
 
-  var prevScrollpos = window.pageYOffset;
+  let prevScrollPos = window.pageYOffset;
   window.onscroll = () => {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      setisScrolledUp(false);
-    } else {
-      setisScrolledUp(true);
-    }
-    prevScrollpos = currentScrollPos;
+    const currentScrollPos = window.pageYOffset;
+    setisScrolledUp(prevScrollPos <= currentScrollPos);
+    prevScrollPos = currentScrollPos;
   };
 
   return (
