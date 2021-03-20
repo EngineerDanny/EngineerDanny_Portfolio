@@ -5,12 +5,7 @@ import WorkExperience from "./components/WorkExperience/WorkExperience";
 import Projects from "./components/Projects/Projects";
 import ContactSection from "./components/ContactSection";
 import ContactSideBar from "./components/ContactSideBar";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
