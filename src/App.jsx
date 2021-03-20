@@ -12,11 +12,11 @@ function App() {
     <Router>
       <div className=" bg-navy text-white box-border mx-auto">
         <NavBar />
-        <div className=" flex flex-row items-center">
+        <div className="flex flex-row items-center px-32  pt-16">
           <ContactSideBar />
           <Switch>
             <Route path="/about">
-              <section className="">
+              <section className="min-h-screen">
                 <AboutSection />
               </section>
             </Route>
@@ -40,8 +40,7 @@ function App() {
             </Route>
 
             <Route path="/">
-              <section className="h-screen flex flex-row items-center">
-               
+              <section className="h-screen">
                 <IntroHeader />
               </section>
             </Route>

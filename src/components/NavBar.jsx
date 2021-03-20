@@ -6,7 +6,7 @@ const NavBar = () => {
   const [isScrolledUp, setisScrolledUp] = useState(true);
 
   var prevScrollpos = window.pageYOffset;
-  window.onscroll = function () {
+  window.onscroll = () => {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
       setisScrolledUp(false);
@@ -19,8 +19,12 @@ const NavBar = () => {
   return (
     <nav
       className={` fixed ${
-        !isScrolledUp ? "top-0" : "-top-48"
-      } flex flex-row p-5 items-center justify-between transition-all w-full bg-gray-900`}
+        !isScrolledUp ? "top-0" : "-top-40"
+      } flex flex-row p-5 items-center justify-between 
+      transition-all duration-500 w-full bg-navy z-10`}
+      style={{
+        backdropFilter: "blur(20px)",
+      }}
     >
       <img
         src={logo}
