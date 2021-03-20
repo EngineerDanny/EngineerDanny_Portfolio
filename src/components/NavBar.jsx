@@ -18,6 +18,7 @@ const NavBar = () => {
     paddingBottom: "5px",
     borderColor: "rgba(16, 185, 129, 1)",
     borderBottomWidth: "1px",
+    
   };
   return (
     <nav
