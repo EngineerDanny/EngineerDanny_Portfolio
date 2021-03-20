@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import logo from "../assets/my-pic.jpg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
-  const [isScrolledUp, setisScrolledUp] = useState(false);
-
+  const [isScrolledUp, setisScrolledUp] = useState(false);  
   let prevScrollPos = window.pageYOffset;
+
   window.onscroll = () => {
     const currentScrollPos = window.pageYOffset;
     setisScrolledUp(prevScrollPos <= currentScrollPos);
@@ -26,19 +26,19 @@ const NavBar = () => {
       />
       <ul className="flex flex-row items-center">
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <Link to="/home">Home</Link>
+          <NavLink to="/home" calss>Home</NavLink>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <Link to="/about">About</Link>
+          <NavLink to="/about">About</NavLink>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <Link to="/experience">Experience</Link>
+          <NavLink to="/experience">Experience</NavLink>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <Link to="/projects">Work</Link>
+          <NavLink to="/projects">Work</NavLink>
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <Link to="/contact">Contact</Link>
+          <NavLink to="/contact">Contact</NavLink>
         </li>
         <li class="mx-2">
           <button

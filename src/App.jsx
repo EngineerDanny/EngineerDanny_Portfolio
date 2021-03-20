@@ -5,9 +5,20 @@ import WorkExperience from "./components/WorkExperience/WorkExperience";
 import Projects from "./components/Projects/Projects";
 import ContactSection from "./components/ContactSection";
 import ContactSideBar from "./components/ContactSideBar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useHistory,
+} from "react-router-dom";
 
 function App() {
+  const history = useHistory();
+  const currentPath = history?.location?.pathname;
+
+  console.log(`this is the current path ${currentPath}`);
+
+  
   return (
     <Router>
       <div className=" bg-navy text-white box-border mx-auto">
