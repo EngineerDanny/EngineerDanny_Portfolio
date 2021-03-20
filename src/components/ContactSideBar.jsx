@@ -43,10 +43,10 @@ const contactDetailList = [
 
 const ContactSideBar = () => {
   return (
-    <div className=" fixed  top-3 left-2">
-      <div className="flex flex-col items-center mr-20 ml-10 h-full">
+    <div className="fixed left-0">
+      <div className="flex flex-col items-center justify-center ml-7 h-screen pt-10">
         <span
-          className="bg-white h-1/3  my-4 opacity-80 rounded-full"
+          className="bg-white h-1/3 my-4 opacity-80 rounded-full"
           style={{ width: "1px" }}
         ></span>
         {contactDetailList.map((value, index) => {

@@ -12,8 +12,8 @@ function App() {
     <Router>
       <div className=" bg-navy text-white box-border mx-auto">
         <NavBar />
-        <div className="flex flex-row items-center px-32  pt-16">
-          <ContactSideBar />
+        <ContactSideBar />
+        <div className="flex flex-row items-center px-32 pt-14">
           <Switch>
             <Route path="/about">
               <section className="min-h-screen">
