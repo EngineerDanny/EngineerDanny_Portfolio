@@ -5,16 +5,23 @@ import WorkExperience from "./components/WorkExperience/WorkExperience";
 import Projects from "./components/Projects/Projects";
 import ContactSection from "./components/ContactSection";
 import ContactSideBar from "./components/ContactSideBar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 function App() {
+  const location = useLocation();
   return (
-    <Router>
-      <div className=" bg-navy text-white box-border mx-auto">
-        <NavBar />
-        <ContactSideBar />
-        <div className="flex flex-row items-center px-32 pt-14">
-          <Switch>
+    <div className=" bg-navy text-white box-border mx-auto">
+      <NavBar />
+      <ContactSideBar />
+      <div className="flex flex-row items-center px-32 pt-14">
+        <AnimatePresence exitBeforeEnter initial={false}>
+          <Switch location={location} key={location.pathname}>
             <Route path="/about">
               <section className="min-h-screen">
                 <AboutSection />
@@ -45,9 +52,9 @@ function App() {
               </section>
             </Route>
           </Switch>
-        </div>
+        </AnimatePresence>
       </div>
-    </Router>
+    </div>
   );
 }
 
