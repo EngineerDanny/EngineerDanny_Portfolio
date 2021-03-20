@@ -25,19 +25,18 @@ const AboutSection = () => {
     gcloud,
     node,
     mongo,
-    express
+    express,
   ];
 
-
   return (
-    <div className="flex flex-col justify-start items-center h-4/6">
+    <div className="flex flex-col h-4/6 items-center justify-start">
       <div className="flex flex-row items-center my-10">
-        <div className="w-40 h-0.5  bg-gray-300 opacity-30"></div>
+        <div className="w-40 h-0.5 bg-gray-300 opacity-30"></div>
         <h1 className="text-4xl font-medium opacity-80 mx-3">About</h1>
         <div className="w-40 h-0.5 bg-gray-300 opacity-30"></div>
       </div>
       {/* Details */}
-      <div className="flex flex-col max-w-4xl items-center">
+      <div className="flex flex-col items-center justify-center">
         <p className="text-base font-light opacity-80 ">
           Hi! I'm Daniel, a FullStack engineer based in KNUST, Ghana. I enjoy
           creating things that live on the internet, whether that be websites,
