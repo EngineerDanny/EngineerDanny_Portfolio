@@ -21,7 +21,7 @@ const NavBar = () => {
       className={` fixed ${
         !isScrolledUp ? "top-0" : "-top-40"
       } flex flex-row p-5 items-center justify-between 
-      transition-all duration-500 w-full bg-navy z-10`}
+      transition-all duration-500 w-full bg-navy z-10 shadow-lg h-16`}
       style={{
         backdropFilter: "blur(20px)",
       }}
