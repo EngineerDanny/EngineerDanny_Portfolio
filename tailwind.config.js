@@ -13,15 +13,29 @@ module.exports = {
         "sans-serif",
       ],
     },
+    filter: {
+      // defaults to {}
+      none: "none",
+      grayscale: "grayscale(1)",
+      invert: "invert(1)",
+      sepia: "sepia(1)",
+    },
+    backdropFilter: {
+      // defaults to {}
+      none: "none",
+      blur: "blur(20px)",
+    },
     extend: {
       colors: {
         navy: "#0A192F",
       },
-      
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      filter: ["responsive"], // defaults to ['responsive']
+      backdropFilter: ["responsive"], // defaults to ['responsive']
+    },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-filters")],
 };

@@ -49,7 +49,7 @@ const NavBar = () => {
         </li>
         <li class="mx-2">
           <button
-            className="text-sm px-4 py-2 border-2 border-green-500 s focus:outline-none
+            className="text-sm px-4 py-1 border-2 border-green-500 s focus:outline-none
           rounded-full text-green-500 hover:bg-green-500 hover:text-white"
           >
             Resume
