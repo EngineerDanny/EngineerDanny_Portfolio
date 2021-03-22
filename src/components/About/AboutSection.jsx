@@ -1,10 +1,11 @@
 import React from "react";
 import LazyLoadImage from "react-lazy-load-image-component";
+import { motion } from "framer-motion";
+
 import express from "../../assets/techs/express.png";
 import mongo from "../../assets/techs/mongo.png";
 import node from "../../assets/techs/node.png";
 import react from "../../assets/techs/react.svg";
-
 import android from "../../assets/techs/android.svg";
 import flutter from "../../assets/techs/flutter.svg";
 import firebase from "../../assets/techs/firebase.png";
@@ -29,7 +30,12 @@ const AboutSection = () => {
   ];
 
   return (
-    <div className="flex flex-col h-4/6 items-center justify-start">
+    <motion.div
+      initial={{  opacity: 0 }}
+      animate={{  opacity: 1 }}
+      exit={{  opacity: 0 }}
+      className="flex flex-col h-4/6 items-center justify-start"
+    >
       <div className="flex flex-row items-center my-10">
         <div className="w-40 h-0.5 bg-gray-300 opacity-30"></div>
         <h1 className="text-4xl font-medium opacity-80 mx-3">About</h1>
@@ -80,7 +86,7 @@ const AboutSection = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

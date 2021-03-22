@@ -53,14 +53,9 @@ const NavBar = () => {
             Work
           </NavLink>
         </li>
-        <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <NavLink to="/contact" activeStyle={mActiveStyle}>
-            Contact
-          </NavLink>
-        </li>
         <li class="mx-2">
           <button
-            className="text-sm px-4 py-1 border-2 border-green-500 s focus:outline-none
+            className="text-sm px-5 py-1.5 border-2 border-green-500 s focus:outline-none
           rounded-full text-green-500 hover:bg-green-500 hover:text-white"
           >
             Resume

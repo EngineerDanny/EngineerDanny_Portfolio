@@ -3,10 +3,10 @@ import IntroHeader from "./components/IntroHeader";
 import AboutSection from "./components/About/AboutSection";
 import WorkExperience from "./components/WorkExperience/WorkExperience";
 import Projects from "./components/Projects/Projects";
-import ContactSection from "./components/ContactSection";
 import ContactSideBar from "./components/ContactSideBar";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 function App() {
   const location = useLocation();
@@ -35,11 +35,7 @@ function App() {
               </section>
             </Route>
 
-            <Route path="/contact">
-              <section className="h-screen">
-                <ContactSection />
-              </section>
-            </Route>
+      
 
             <Route path="/">
               <section className="h-screen">
