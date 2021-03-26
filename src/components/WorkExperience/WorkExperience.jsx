@@ -66,31 +66,26 @@ const WorkExperience = () => {
       </div>
 
       <div className="flex flex-row w-4/5">
+        <FontAwesomeIcon
+          icon={faArrowRight}
+          size="2x"
+          color="green"
+          className="relative top-7"
+        />
         {/*Job Tabs Component */}
-        <ul className="flex flex-col h-64 w-96 justify-evenly border-green-500  mr-5">
+        <ul className="flex flex-col h-64 w-96 max-w-md justify-evenly border-green-500  mr-5">
           {workData.map((value, index) => {
             const isSelected = index === currentIndex;
             return (
-              <div key={index} className={"flex justify-center items-center"}>
-                {isSelected && (
-                  <FontAwesomeIcon
-                    icon={faArrowRight}
-                    size="2x"
-                    color="green"
-                    className=""
-                  />
-                )}
-
-                <div
-                  onClick={() => {
-                    setcurrentIndex(index);
-                  }}
-                  className={`flex-1 h-20 ${
-                    isSelected ? "bg-gray-800 text-green-500" : "bg-none"
-                  }  px-20  mb-1 flex items-center justify-center`}
-                >
-                  <h1 className="font-medium opacity-80">{value.place}</h1>
-                </div>
+              <div
+                onClick={() => {
+                  setcurrentIndex(index);
+                }}
+                className={`flex-1 h-20 ${
+                  isSelected ? "bg-gray-800 text-green-500" : "bg-none"
+                }  px-20  mb-1 flex items-center justify-center hover:bg-gray-800 rounded-md`}
+              >
+                <h1 className="font-medium opacity-80">{value.place}</h1>
               </div>
             );
           })}
