@@ -2,7 +2,7 @@ import React from "react";
 
 const WorkContent = ({ title, duration, contentList }) => {
   return (
-    <div className="flex flex-col">
+    <div className=" h-80 max-h-80 flex flex-col">
       <h1 className="text-lg font-bold opacity-80">{title}</h1>
       {/* Job duration */}
       <p className="py-3 font-medium opacity-80">{duration}</p>

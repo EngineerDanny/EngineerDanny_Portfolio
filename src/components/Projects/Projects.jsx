@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <section className="h-screen">
+    <section className="h-screen w-screen">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

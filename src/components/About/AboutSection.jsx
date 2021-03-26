@@ -30,7 +30,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="min-h-screen">
+    <section className="min-h-screen w-screen">
       
       <motion.div
         initial={{ opacity: 0 }}
