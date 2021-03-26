@@ -31,7 +31,6 @@ const AboutSection = () => {
 
   return (
     <section className="min-h-screen w-screen">
-      
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -45,15 +44,15 @@ const AboutSection = () => {
         {/* Details */}
         <div className="flex flex-col items-center justify-center">
           <p className="text-base font-light opacity-80 ">
-            Hi! I'm Daniel, a FullStack engineer based in KNUST, Ghana. I enjoy
-            creating things that live on the internet, whether that be websites,
-            applications, or anything in between. <br />
+            Hi! I'm Daniel, a FullStack developer and Electrical/Electronics
+            engineer in KNUST, Ghana. I enjoy developing websites and mobile
+            apps.
             <br />
-            My goal is to always build products that provide pixel-perfect,
-            performant experiences. Shortly after graduating from Northeastern
-            University, I joined the engineering team at Upstatement where I
-            work on a wide variety of interesting and meaningful projects on a
-            daily basis. <br />
+            <br />
+            I have been building wide variety of interesting projects. I love to
+            develop performant and nice apps that impact the world positively. I
+            train myself to be a problem solver so I try to solve problems on a
+            daily basis.
             <br />
           </p>
           <tbody className="align-middle table-row-group w-full">
