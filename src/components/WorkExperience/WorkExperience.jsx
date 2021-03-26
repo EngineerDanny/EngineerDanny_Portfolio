@@ -52,24 +52,16 @@ const workData = [
   },
 ];
 
-function getWorkPosition(index) {
-  switch (index) {
-    case 0:
-      return;
-
-      break;
-
-    default:
-      break;
-  }
-}
-
 const WorkExperience = () => {
   const [currentIndex, setcurrentIndex] = useState(0);
   console.log(currentIndex);
   return (
     <section className="h-screen">
-      <div className="flex flex-col h-4/6 items-center justify-start">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="flex flex-col h-4/6 items-center justify-start"
+      >
         {/* Work Experience Header */}
         <div className="flex flex-row items-center my-10">
           <div className="w-40 h-0.5 bg-gray-300 opacity-30"></div>
@@ -117,7 +109,7 @@ const WorkExperience = () => {
             contentList={workData[currentIndex].content}
           />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

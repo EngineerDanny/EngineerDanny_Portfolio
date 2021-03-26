@@ -1,11 +1,16 @@
 import React from "react";
 import profilePic from "../assets/my-pic.jpg";
 import Typical from "react-typical";
+import { motion } from "framer-motion";
 
 const IntroHeader = () => {
   return (
     <section className="h-screen">
-      <div className="flex flex-row items-center h-full">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="flex flex-row items-center h-full"
+      >
         <div className="flex flex-col justify-evenly h-4/6">
           <h1 className="text-md text-green-300">
             <Typical
@@ -37,7 +42,7 @@ const IntroHeader = () => {
           className="w-64 h-64 rounded-full object-cover"
           alt="MyPicture"
         />
-      </div>
+      </motion.div>
     </section>
   );
 };

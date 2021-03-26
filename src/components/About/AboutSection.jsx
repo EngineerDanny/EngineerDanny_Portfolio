@@ -35,7 +35,6 @@ const AboutSection = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
         className="flex flex-col h-4/6 items-center justify-start"
       >
         <div className="flex flex-row items-center my-10">
