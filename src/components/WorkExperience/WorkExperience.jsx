@@ -8,7 +8,7 @@ const workData = [
   {
     place: "FARMHOUSE",
     title: "Frontend Developer",
-    duration: "May 2018 - Present",
+    duration: "March 2021 - Present",
     content: [
       "Write modern, performant, maintainable code for a " +
         "diverse array of client and internal projects",
@@ -22,7 +22,7 @@ const workData = [
   {
     place: "GODLIVES",
     title: "Mobile Developer & BackEnd Engineer",
-    duration: "May 2019 - Present",
+    duration: "April 2020 - Present",
     content: [
       "Write modern, performant, maintainable code for a " +
         "diverse array of client and internal projects",
@@ -39,15 +39,13 @@ const workData = [
   {
     place: "DYNAMMITE",
     title: "Mobile Developer & Engineering Manager",
-    duration: "May 2020 - Present",
+    duration: "May 2019 - November 2019",
     content: [
-      "Write modern, performant, maintainable code for a " +
-        "diverse array of client and internal projects",
-      "Work with a variety of different languages, platforms, frameworks," +
-        "and content management systems such as JavaScript, TypeScript," +
-        "Gatsby, React, Craft, WordPress, Prismic, and Netlify ",
-      "Communicate with multi-disciplinary teams of engineers, designers," +
-        "producers, and clients on a daily basis",
+      "Write modern, performant, maintainable code for the mobile app",
+      "Utilize Java programming language for android development",
+      "Use firebase as the main backend",
+      "Integrate wordpress API with mobile app",
+      "Communicate with creative designer to improve upon the app",
     ],
   },
 ];
@@ -56,14 +54,14 @@ const WorkExperience = () => {
   const [currentIndex, setcurrentIndex] = useState(0);
   console.log(currentIndex);
   return (
-    <section className="h-screen">
+    <section className="h-screen w-screen">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         className="flex flex-col h-4/6 items-center justify-start"
       >
         {/* Work Experience Header */}
-        <div className="flex flex-row items-center my-10">
+        <div className="flex flex-row items-center my-10 ">
           <div className="w-40 h-0.5 bg-gray-300 opacity-30"></div>
           <h1 className="text-4xl font-medium opacity-80 mx-3">
             My Work Experience
@@ -93,7 +91,7 @@ const WorkExperience = () => {
           />
 
           {/*Job Tabs Component */}
-          <ul className="flex flex-col w-96 h-80 justify-evenly border-green-500  mr-5">
+          <ul className="flex flex-col h-80 justify-evenly border-green-500  mr-5">
             {workData.map((value, index) => {
               const isSelected = index === currentIndex;
               return (
@@ -101,7 +99,7 @@ const WorkExperience = () => {
                   onClick={() => {
                     setcurrentIndex(index);
                   }}
-                  className={`flex-1 h-20 ${
+                  className={`flex-1 h-20 w-64  ${
                     isSelected ? "bg-green-800 text-white" : "bg-none"
                   } bg-gray-800 px-20  mb-1 flex items-center cursor-pointer
                    justify-center hover:bg-green-900 rounded-md`}
