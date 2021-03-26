@@ -111,7 +111,7 @@ const WorkExperience = () => {
           })}
         </ul>
         <WorkContent
-          index={currentIndex}
+       
           title={workData[currentIndex].title}
           duration={workData[currentIndex].duration}
           contentList={workData[currentIndex].content}

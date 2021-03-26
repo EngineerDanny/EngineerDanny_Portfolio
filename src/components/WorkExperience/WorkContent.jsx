@@ -1,8 +1,13 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const WorkContent = ({ title, duration, contentList }) => {
   return (
-    <div className="flex flex-col">
+    <motion.div
+      animate={{ opacity: 1 }}   
+      transition={{ ease: "easeOut", duration: 2 }}
+      className="flex flex-col"
+    >
       <h1 className=" text-lg font-bold opacity-80">{title}</h1>
       {/* Job duration */}
       <p className="py-2 font-medium opacity-80">{duration}</p>
@@ -14,7 +19,7 @@ const WorkContent = ({ title, duration, contentList }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 
