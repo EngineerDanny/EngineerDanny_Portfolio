@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import WorkContent from "./WorkContent";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const workData = [
   {
@@ -28,7 +30,7 @@ const workData = [
         "Gatsby, React, Craft, WordPress, Prismic, and Netlify ",
       "Communicate with multi-disciplinary teams of engineers, designers," +
         "producers, and clients on a daily basis",
-        
+
       "Communicate with multi-disciplinary teams of engineers, designers," +
         "producers, and clients on a daily basis",
     ],
@@ -65,22 +67,36 @@ const WorkExperience = () => {
 
       <div className="flex flex-row w-4/5">
         {/*Job Tabs Component */}
-        <ul className="flex flex-col  h-64 justify-evenly border-green-500 border-l-2 mr-5">
+        <ul className="flex flex-col h-64 w-96 justify-evenly border-green-500  mr-5">
           {workData.map((value, index) => {
+            const isSelected = index === currentIndex;
             return (
-              <button
-                onClick={() => {
-                  setcurrentIndex(index);
-                }}
-                key={index}
-                className="flex-1 bg-gray-800 text-green-500 px-20  mb-1 flex items-center justify-center"
-              >
-                <h1 className="font-medium opacity-80">{value.place}</h1>
-              </button>
+              <div key={index} className={"flex justify-center items-center"}>
+                {isSelected && (
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    size="2x"
+                    color="green"
+                    className=""
+                  />
+                )}
+
+                <div
+                  onClick={() => {
+                    setcurrentIndex(index);
+                  }}
+                  className={`flex-1 h-20 ${
+                    isSelected ? "bg-gray-800 text-green-500" : "bg-none"
+                  }  px-20  mb-1 flex items-center justify-center`}
+                >
+                  <h1 className="font-medium opacity-80">{value.place}</h1>
+                </div>
+              </div>
             );
           })}
         </ul>
         <WorkContent
+          index={currentIndex}
           title={workData[currentIndex].title}
           duration={workData[currentIndex].duration}
           contentList={workData[currentIndex].content}
