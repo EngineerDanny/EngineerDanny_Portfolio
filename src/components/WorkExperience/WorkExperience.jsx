@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import WorkContent from "./WorkContent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 const workData = [
   {
@@ -51,6 +52,18 @@ const workData = [
   },
 ];
 
+function getWorkPosition(index) {
+  switch (index) {
+    case 0:
+      return;
+
+      break;
+
+    default:
+      break;
+  }
+}
+
 const WorkExperience = () => {
   const [currentIndex, setcurrentIndex] = useState(0);
   console.log(currentIndex);
@@ -70,10 +83,17 @@ const WorkExperience = () => {
           icon={faArrowRight}
           size="2x"
           color="green"
-          className="relative top-7"
+          className={` transition-all mr-3 relative ${
+            currentIndex === 0
+              ? "top-8"
+              : currentIndex === 1
+              ? "top-24"
+              : "top-44"
+          } `}
         />
+
         {/*Job Tabs Component */}
-        <ul className="flex flex-col h-64 w-96 max-w-md justify-evenly border-green-500  mr-5">
+        <ul className="flex flex-col h-64 w-96 justify-evenly border-green-500  mr-5">
           {workData.map((value, index) => {
             const isSelected = index === currentIndex;
             return (
