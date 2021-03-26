@@ -50,7 +50,7 @@ const NavBar = () => {
         </li>
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
           <NavLink to="/projects" activeStyle={mActiveStyle}>
-            Work
+            Projects
           </NavLink>
         </li>
         <li class="mx-2">

@@ -14,15 +14,15 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const contactDetailList = [
   {
     icon: faGithub,
-    link: "github.io",
+    link: "https://github.com/EngineerDanny",
   },
   {
     icon: faGitlab,
-    link: "github.io",
+    link: "https://gitlab.com/EngineerDanny",
   },
   {
     icon: faTwitter,
-    link: "github.io",
+    link: "https://twitter.com/EngineerDevDan",
   },
   {
     icon: faInstagram,
@@ -30,7 +30,7 @@ const contactDetailList = [
   },
   {
     icon: faWhatsapp,
-    link: "github.io",
+    link: "tel:+233548215725",
   },
   {
     icon: faTelegram,
@@ -38,7 +38,7 @@ const contactDetailList = [
   },
   {
     icon: faEnvelope,
-    link: "github.io",
+    link: "mailto:agyapongdaniel7777@gmail.com",
   },
 ];
 
