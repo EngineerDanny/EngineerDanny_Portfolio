@@ -17,27 +17,19 @@ function App() {
         <AnimatePresence exitBeforeEnter initial={false}>
           <Switch location={location} key={location.pathname}>
             <Route path="/about">
-              <section className="min-h-screen">
-                <AboutSection />
-              </section>
+              <AboutSection />
             </Route>
 
             <Route path="/experience">
-              <section className="h-screen">
-                <WorkExperience />
-              </section>
+              <WorkExperience />
             </Route>
 
             <Route path="/projects">
-              <section className="h-screen">
-                <Projects />
-              </section>
-            </Route>    
-            
+              <Projects />
+            </Route>
+
             <Route path="/">
-              <section className="h-screen">
-                <IntroHeader />
-              </section>
+              <IntroHeader />
             </Route>
           </Switch>
         </AnimatePresence>
