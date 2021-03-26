@@ -6,7 +6,6 @@ import Projects from "./components/Projects/Projects";
 import ContactSideBar from "./components/ContactSideBar";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import { motion } from "framer-motion";
 
 function App() {
   const location = useLocation();
@@ -33,10 +32,8 @@ function App() {
               <section className="h-screen">
                 <Projects />
               </section>
-            </Route>
-
-      
-
+            </Route>    
+            
             <Route path="/">
               <section className="h-screen">
                 <IntroHeader />
