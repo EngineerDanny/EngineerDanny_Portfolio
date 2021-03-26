@@ -76,17 +76,24 @@ const WorkExperience = () => {
             icon={faArrowRight}
             size="2x"
             color=""
-            className={`transition-all mr-3 relative ${
+            className="transition-all mr-5 relative"
+            style={
               currentIndex === 0
-                ? "top-8"
+                ? {
+                    top: "2rem",
+                  }
                 : currentIndex === 1
-                ? "top-24"
-                : "top-44"
-            } `}
+                ? {
+                    top: "9rem",
+                  }
+                : {
+                    top: "15rem",
+                  }
+            }
           />
 
           {/*Job Tabs Component */}
-          <ul className="flex flex-col h-64 w-96 justify-evenly border-green-500  mr-5">
+          <ul className="flex flex-col w-96 h-80 justify-evenly border-green-500  mr-5">
             {workData.map((value, index) => {
               const isSelected = index === currentIndex;
               return (
