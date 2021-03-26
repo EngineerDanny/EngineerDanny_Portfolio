@@ -75,8 +75,8 @@ const WorkExperience = () => {
           <FontAwesomeIcon
             icon={faArrowRight}
             size="2x"
-            color="green"
-            className={` transition-all mr-3 relative ${
+            color=""
+            className={`transition-all mr-3 relative ${
               currentIndex === 0
                 ? "top-8"
                 : currentIndex === 1
@@ -95,10 +95,11 @@ const WorkExperience = () => {
                     setcurrentIndex(index);
                   }}
                   className={`flex-1 h-20 ${
-                    isSelected ? "bg-gray-800 text-green-500" : "bg-none"
-                  }  px-20  mb-1 flex items-center justify-center hover:bg-gray-800 rounded-md`}
+                    isSelected ? "bg-green-800 text-white" : "bg-none"
+                  } bg-gray-800 px-20  mb-1 flex items-center cursor-pointer
+                   justify-center hover:bg-green-900 rounded-md`}
                 >
-                  <h1 className="font-medium opacity-80">{value.place}</h1>
+                  <h1>{value.place}</h1>
                 </div>
               );
             })}
