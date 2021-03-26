@@ -58,7 +58,7 @@ const NavBar = () => {
             className="text-sm px-5 py-1.5 border-2 border-green-500 s focus:outline-none
           rounded-full text-green-500 hover:bg-green-500 hover:text-white"
           >
-            Resume
+            Resumè
           </button>
         </li>
       </ul>
