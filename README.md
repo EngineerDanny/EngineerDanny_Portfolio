@@ -1,4 +1,5 @@
-# This is my personal portfolio project built with REACT + TAILWIND CSS
+# This is my personal portfolio project built with 
+# REACT + TAILWIND CSS 🚀🚀🚀
 
 If you want to run this project, just 
 ```npm start```
