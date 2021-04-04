@@ -10,22 +10,24 @@ const workData = [
     title: "Frontend Developer",
     duration: "March 2021 - Present",
     content: [
-      "Suggest various ways of improving the Farmhouse Movies App",
-      "Work with UI/UX designer",
-     
+      "Collaborate with a team of developers to improve the Farmhouse Movies App",
+      "Work closely with the UI/UX designer and other developers to ensure great " +
+        "user experiences across Farmhouse’s Android and iOS apps",
+      "Propose and implement solutions to issues existing on the app",
+      "Utilize technologies like Flutter, PHP and Digital Ocean",
     ],
   },
   {
     place: "GODLIVES",
     title: "FullStack Developer",
-    duration: "April 2020 - Present",
+    duration: "April 2020 - March 2021",
     content: [
-      "Write modern, performant and maintainable code for the company",
-      "Develop Godlives delivery userapp with flutter",
-      "Work with a variety of languages and frameworks" +
+      "Wrote modern, performant and maintainable code for the company",
+      "Developed Godlives delivery userapp with flutter",
+      "Worked with a variety of languages and frameworks" +
         " such as JavaScript, Dart, Flutter and Node js",
-      "Use Git and Gitlab as the main version control platform",
-      "Converse with other engineers and the tech lead regularly",
+      "Used Git and Gitlab as the main version control platform",
+      "Conversed with other engineers and the techlead regularly",
     ],
   },
   {
