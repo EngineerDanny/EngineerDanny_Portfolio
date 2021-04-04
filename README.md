@@ -1,8 +1,10 @@
-# This is my personal portfolio project
+# This is my personal portfolio project built with 
+# REACT + TAILWIND CSS 🚀🚀🚀
 
-Website is built with React + Tailwind CSS
+If you want to run this project, just 
+```npm start```
 
+The command below helps to check up on your domain
 
-//This helps to check up on your domain
-dig WWW.WEBSITE.COM +nostats +nocomments +nocmd
+dig <WWW.WEBSITE.COM> +nostats +nocomments +nocmd
 
