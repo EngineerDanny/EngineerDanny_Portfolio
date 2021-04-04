@@ -10,30 +10,22 @@ const workData = [
     title: "Frontend Developer",
     duration: "March 2021 - Present",
     content: [
-      "Write modern, performant, maintainable code for a " +
-        "diverse array of client and internal projects",
-      "Work with a variety of different languages, platforms, frameworks," +
-        "and content management systems such as JavaScript, TypeScript," +
-        "Gatsby, React, Craft, WordPress, Prismic, and Netlify ",
-      "Communicate with multi-disciplinary teams of engineers, designers," +
-        "producers, and clients on a daily basis",
+      "Suggest various ways of improving the Farmhouse Movies App",
+      "Work with UI/UX designer",
+     
     ],
   },
   {
     place: "GODLIVES",
-    title: "Mobile Developer & BackEnd Engineer",
+    title: "FullStack Developer",
     duration: "April 2020 - Present",
     content: [
-      "Write modern, performant, maintainable code for a " +
-        "diverse array of client and internal projects",
-      "Work with a variety of different languages, platforms, frameworks," +
-        "and content management systems such as JavaScript, TypeScript," +
-        "Gatsby, React, Craft, WordPress, Prismic, and Netlify ",
-      "Communicate with multi-disciplinary teams of engineers, designers," +
-        "producers, and clients on a daily basis",
-
-      "Communicate with multi-disciplinary teams of engineers, designers," +
-        "producers, and clients on a daily basis",
+      "Write modern, performant and maintainable code for the company",
+      "Develop Godlives delivery userapp with flutter",
+      "Work with a variety of languages and frameworks" +
+        " such as JavaScript, Dart, Flutter and Node js",
+      "Use Git and Gitlab as the main version control platform",
+      "Converse with other engineers and the tech lead regularly",
     ],
   },
   {
