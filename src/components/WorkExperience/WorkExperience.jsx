@@ -35,7 +35,6 @@ const workData = [
     title: "Mobile Developer & Engineering Manager",
     duration: "May 2019 - November 2019",
     content: [
-      "Write modern, performant, maintainable code for the mobile app",
       "Utilize Java programming language for android development",
       "Use firebase as the main backend",
       "Integrate wordpress API with mobile app",
