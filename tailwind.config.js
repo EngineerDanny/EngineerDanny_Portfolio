@@ -28,6 +28,9 @@ module.exports = {
     extend: {
       colors: {
         navy: "#0A192F",
+        navy100: "#0E192D",
+        navy200: "#15223E",
+        navy300: "#0D192E",
       },
     },
   },
