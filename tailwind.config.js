@@ -38,6 +38,7 @@ module.exports = {
     extend: {
       filter: ["responsive"], // defaults to ['responsive']
       backdropFilter: ["responsive"], // defaults to ['responsive']
+      animation: ["motion-safe", "hover", "group-hover"],
     },
   },
   plugins: [require("tailwindcss-filters")],
