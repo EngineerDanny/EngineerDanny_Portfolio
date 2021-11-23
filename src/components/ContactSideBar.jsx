@@ -7,7 +7,6 @@ import {
   faInstagram,
   faWhatsapp,
   faTelegram,
-  
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -44,12 +43,8 @@ const contactDetailList = [
 
 const ContactSideBar = () => {
   return (
-    <div className="fixed left-0">
-      <div className="flex flex-col items-center justify-center ml-7 h-screen pt-10">
-        <span
-          className="bg-white h-1/3 my-4 opacity-80 rounded-full"
-          style={{ width: "1px" }}
-        ></span>
+    <div className="">
+      <div className="flex flex-row items-center justify-center   pt-10">
         {contactDetailList.map((value, index) => {
           return (
             <a
@@ -65,10 +60,6 @@ const ContactSideBar = () => {
             </a>
           );
         })}
-        <span
-          className="bg-white h-1/3 rounded-full mb-3 opacity-80"
-          style={{ width: "1px" }}
-        ></span>
       </div>
     </div>
   );
