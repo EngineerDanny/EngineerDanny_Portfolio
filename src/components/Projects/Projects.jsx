@@ -26,6 +26,11 @@ import aukiss3 from "../../assets/appimages/aukiss/3.webp";
 import aukiss4 from "../../assets/appimages/aukiss/4.webp";
 import aukiss5 from "../../assets/appimages/aukiss/5.webp";
 
+import shaq1 from "../../assets/appimages/shaq/1.webp";
+import shaq2 from "../../assets/appimages/shaq/2.webp";
+import shaq3 from "../../assets/appimages/shaq/3.webp";
+import shaq4 from "../../assets/appimages/shaq/4.webp";
+
 const projectModels = [
   {
     title: "Farmhouse Movies App",
@@ -58,6 +63,20 @@ const projectModels = [
     apple_appstore_link:
       "https://apps.apple.com/us/app/farmhouse-movies/id1541154245",
   },
+  {
+    title: "ShaQ Express",
+    description:
+      "You can now do a whole lot more with your ShaQ Express App- do you want to order food? Deliver a package or shop online ?" +
+      "Whatever you’re in the mood for, we’ll make sure it gets delivered right to your doorstep. Just pick a restaurant or shop, choose what you want, swipe to order and let us do the rest!" +
+      "Track your delivery in real-time, with minute-by-minute updates. If staring at a clock isn’t your thing, don’t worry – we'll also send you notifications so you know exactly when your order is about to arrive." +
+      "When we say customer support, we mean customer support. Our wonderful team of professionals are just a chat away and respond in seconds." +
+      "We made paying for your food/packages as simple as possible. That’s why you can pay conveniently and securely with your mobile money or credit card. Whatever works for you.",
+    images: [shaq1, shaq2, shaq3, shaq4],
+    google_play_link:
+      "https://play.google.com/store/apps/details?id=com.farmhousemovies.app",
+    apple_appstore_link:
+      "https://apps.apple.com/us/app/farmhouse-movies/id1541154245",
+  },
 ];
 
 function Projects() {
@@ -66,8 +85,6 @@ function Projects() {
       {projectModels.map((item, index) => {
         return <ProjectTile projectModel={item} key={index} index={index} />;
       })}
-
-     
     </div>
   );
 }
