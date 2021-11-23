@@ -33,7 +33,6 @@ export default function HeroSection() {
                 <span className="block text-indigo-500 font-medium  text-lg">
                   Hello, I am
                 </span>{" "}
-                
                 <span className="block text-white">Daniel Agyapong.</span>
                 <div className="mt-3"></div>
                 <span className="block text-gray-300 font-semibold md:text-5xl">

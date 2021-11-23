@@ -6,42 +6,26 @@ import {
   ButtonNext,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-
-const sliders = [
-  {
-    image: "https://i.ibb.co/VSsN4Jt/carousel-2.png",
-    title: "Lounge Interior",
-  },
-  {
-    image:
-      "https://i.ibb.co/phw8yGZ/sven-brandsma-Qz6-Zx4-Rjd-D8-unsplash-1.png",
-    title: "Lounge Interior",
-  },
-  {
-    image:
-      "https://i.ibb.co/92ZYJyK/behzad-ghaffarian-nh-Wg-ZNV85-LQ-unsplash-1-1.png",
-    title: "Lounge Interior",
-  },
-  {
-    image:
-      "https://i.ibb.co/phw8yGZ/sven-brandsma-Qz6-Zx4-Rjd-D8-unsplash-1.png",
-    title: "Lounge Interior",
-  },
-];
+import f1 from "../../assets/appimages/1.png";
+import f2 from "../../assets/appimages/2.png";
+import f3 from "../../assets/appimages/3.png";
+import f4 from "../../assets/appimages/4.png";
+import f5 from "../../assets/appimages/5.png";
+import f6 from "../../assets/appimages/6.png";
 
 /* Install pure-react-carousel using -> npm i pure-react-carousel */
 //className="lg:w-3/5 md:w-1/2 w-full relative h-full flex items-end justify-center text-white"
-export default function Carousel() {
+export default function Carousel({ images }) {
   return (
-    <div className=" lg:w-3/5 md:w-1/2 w-full   flex items-end justify-center text-white">
+    <div className=" lg:w-2/5 md:w-1/2 w-full flex items-end justify-center text-white">
       <div className=" h-full w-full ">
         {/* Carousel for Small-Sized Screen */}
         <CarouselProvider
           className="relative block sm:hidden"
           naturalSlideWidth={100}
-          naturalSlideHeight={100}
+          //   naturalSlideHeight={100}
           isIntrinsicHeight={true}
-          totalSlides={sliders.length}
+          totalSlides={images.length}
           visibleSlides={1}
           step={1}
           infinite={true}
@@ -70,31 +54,21 @@ export default function Carousel() {
               </svg>
             </ButtonBack>
             <Slider>
-              {sliders.map((value, index) => {
+              {images.map((image, index) => {
                 return (
                   <Slide index={{ index }}>
                     <div className="gallery-cell lg:mr-7 mr-6 lg:w-1/2 sm:w-96 w-full h-full">
                       <div className="relative w-full h-full lg:block hidden">
                         <img
-                          src={value.image}
-                          className="object-center object-cover w-full h-full"
+                          src={image}
+                          className="object-center  object-fill w-full h-full"
                         />
-                        <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
-                          <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                            {value.title}
-                          </h1>
-                        </div>
                       </div>
                       <div className="relative w-full h-full lg:hidden">
                         <img
-                          src={value.image}
-                          className="object-center object-cover w-full h-full"
+                          src={image}
+                          className="object-center  object-fill w-full h-full"
                         />
-                        <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
-                          <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                            {value.title}
-                          </h1>
-                        </div>
                       </div>
                     </div>
                   </Slide>
@@ -131,8 +105,9 @@ export default function Carousel() {
         <CarouselProvider
           className="relative hidden sm:block"
           naturalSlideWidth={100}
+          //   naturalSlideHeight={1200}
           isIntrinsicHeight={true}
-          totalSlides={sliders.length}
+          totalSlides={images.length}
           visibleSlides={1}
           step={1}
           infinite={true}
@@ -163,7 +138,7 @@ export default function Carousel() {
             </ButtonBack>
 
             <Slider className="carousel__sliderLarge">
-              {sliders.map((value, index) => {
+              {images.map((image, index) => {
                 return (
                   <Slide
                     className="carousel__inner-slideLarge"
@@ -172,26 +147,16 @@ export default function Carousel() {
                     <div className="gallery-cell w-full h-full">
                       <div className="relative w-full h-full lg:block hidden">
                         <img
-                          src={value.image}
-                          className="object-center object-cover w-full h-full"
+                          src={image}
+                          className="object-center object-fill w-full h-full"
                         />
-                        <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
-                          <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                            {value.title}
-                          </h1>
-                        </div>
                       </div>
                       <div className="relative w-full h-full lg:hidden">
                         <img
-                          src={value.image}
+                          src={image}
                           alt="sitting area"
-                          className="object-center object-cover w-full h-full"
+                          className="object-center object-fill w-full h-full"
                         />
-                        <div className="pl-6 pb-6 lg:pl-8 lg:pb-8 absolute left-0 bottom-0">
-                          <h1 className="text-xl leading-5 lg:text-2xl lg:leading-normal font-medium text-white">
-                            {value.title}
-                          </h1>
-                        </div>
                       </div>
                     </div>
                   </Slide>
@@ -227,12 +192,12 @@ export default function Carousel() {
       <style>
         {`
                     .gallery-cell {
-                        height: 386px;
+                        height: 586px;
                         padding-right:15px;
                     }
                     @media (min-width: 300px) and (max-width: 420px) {
                         .gallery-cell {
-                            height: 286px !important;
+                            height: 586px !important;
                             
                         }
                     }

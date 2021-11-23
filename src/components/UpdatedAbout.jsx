@@ -141,7 +141,7 @@ export default function UpdatedAbout() {
           {/* <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
             Hi! I'm Daniel, a FullStack developer
           </p> */}
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          <p className="mt-4 max-w-2xl text-xl text-gray-400 lg:mx-auto">
             I enjoy developing websites and mobile apps. I have been building
             wide variety of interesting projects. I love to develop performant
             and nice apps that impact the world positively. I train myself to be
