@@ -16,7 +16,7 @@ import {ExperienceLayout} from "./components/UpdatedExperience";
 function App() {
   const location = useLocation();
   return (
-    <div className=" h-full bg-navy text-white  mx-auto">
+    <div className=" h-full bg-navy text-white  mx-auto ">
       <Example />
       {/* <ContactSideBar /> */}
       
