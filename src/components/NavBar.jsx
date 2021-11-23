@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../assets/my-pic.jpg";
 import { NavLink } from "react-router-dom";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
@@ -29,11 +28,7 @@ export const NavBar = () => {
       } flex flex-row p-5 items-center justify-between 
       transition-all duration-500 w-full z-10 shadow-lg h-16 backdrop-blur`}
     >
-      <img
-        src={logo}
-        className=" w-10 h-10 rounded-3xl object-cover"
-        alt="MyPicture"
-      />
+   
       <ul className="flex flex-row items-center">
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
           <NavLink exact to="/" activeStyle={mActiveStyle}>
