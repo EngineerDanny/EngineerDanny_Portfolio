@@ -1,7 +1,4 @@
-import React from "react";
-import LazyLoadImage from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
-
 import express from "../../assets/techs/express.png";
 import mongo from "../../assets/techs/mongo.png";
 import node from "../../assets/techs/node.png";

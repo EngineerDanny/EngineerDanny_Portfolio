@@ -56,12 +56,14 @@ export default function Carousel({ images }) {
                       <img
                         src={image}
                         className="object-center  object-fill w-full h-full"
+                        alt=""
                       />
                     </div>
                     <div className="relative w-full h-full lg:hidden">
                       <img
                         src={image}
                         className="object-center  object-fill w-full h-full"
+                        alt=""
                       />
                     </div>
                   </div>
@@ -140,6 +142,7 @@ export default function Carousel({ images }) {
                       <img
                         src={image}
                         className="object-center object-fill w-full h-full"
+                        alt=""
                       />
                     </div>
                     <div className="relative w-full h-full lg:hidden">

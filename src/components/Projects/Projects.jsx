@@ -1,16 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
-import google_play from "../../assets/badges/google-play-badge.png";
-import appstore_badge from "../../assets/badges/appstore-badge.png";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-} from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import Carousel from "./Carousel";
 import ProjectTile from "./ProjectTile";
 
 import f1 from "../../assets/appimages/fh/1.png";

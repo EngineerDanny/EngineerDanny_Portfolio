@@ -1,23 +1,14 @@
-/* This example requires Tailwind CSS v2.0+ */
 import {
   AnnotationIcon,
   GlobeAltIcon,
-  LightningBoltIcon,
   ScaleIcon,
 } from "@heroicons/react/outline";
 import TechTile from "./About/TechTile";
-
-import express from "../assets/techs/express.png";
-import mongo from "../assets/techs/mongo.png";
 import node from "../assets/techs/node.png";
-
 import react from "../assets/techs/react.svg";
 import android from "../assets/techs/android.svg";
 import flutter from "../assets/techs/flutter.svg";
 import firebase from "../assets/techs/firebase.png";
-import gcloud from "../assets/techs/gcloud.png";
-import iOS from "../assets/techs/iOS.png";
-import next from "../assets/techs/next.svg";
 
 const progLanguages = [
   {
@@ -102,7 +93,6 @@ const frameworks = [
     image: node,
   },
 ];
-
 
 export default function UpdatedAbout() {
   return (

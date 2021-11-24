@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Disclosure } from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 export const NavBar = () => {
   const [hasScrolledDown, setHasScrolledDown] = useState(false);
@@ -28,7 +27,6 @@ export const NavBar = () => {
       } flex flex-row p-5 items-center justify-between 
       transition-all duration-500 w-full z-10 shadow-lg h-16 backdrop-blur`}
     >
-   
       <ul className="flex flex-row items-center">
         <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
           <NavLink exact to="/" activeStyle={mActiveStyle}>
@@ -95,7 +93,6 @@ export function Example() {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                 
                   <div class="headline">
                     <span className="font-bold">Engineer</span>
                     <span className="font-bold text-indigo-600">Danny</span>
