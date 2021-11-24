@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/EngineerDanny.github.io/static/css/main.a76dfff0.chunk.css",
-    "main.js": "/EngineerDanny.github.io/static/js/main.26be016f.chunk.js",
-    "main.js.map": "/EngineerDanny.github.io/static/js/main.26be016f.chunk.js.map",
-    "runtime-main.js": "/EngineerDanny.github.io/static/js/runtime-main.00d8fdf1.js",
-    "runtime-main.js.map": "/EngineerDanny.github.io/static/js/runtime-main.00d8fdf1.js.map",
+    "main.js": "/EngineerDanny.github.io/static/js/main.703625be.chunk.js",
+    "main.js.map": "/EngineerDanny.github.io/static/js/main.703625be.chunk.js.map",
+    "runtime-main.js": "/EngineerDanny.github.io/static/js/runtime-main.2b5ef128.js",
+    "runtime-main.js.map": "/EngineerDanny.github.io/static/js/runtime-main.2b5ef128.js.map",
     "static/css/2.26dc49ed.chunk.css": "/EngineerDanny.github.io/static/css/2.26dc49ed.chunk.css",
-    "static/js/2.f1d5b1b5.chunk.js": "/EngineerDanny.github.io/static/js/2.f1d5b1b5.chunk.js",
-    "static/js/2.f1d5b1b5.chunk.js.map": "/EngineerDanny.github.io/static/js/2.f1d5b1b5.chunk.js.map",
-    "static/js/3.54da498f.chunk.js": "/EngineerDanny.github.io/static/js/3.54da498f.chunk.js",
-    "static/js/3.54da498f.chunk.js.map": "/EngineerDanny.github.io/static/js/3.54da498f.chunk.js.map",
+    "static/js/2.6ad5381f.chunk.js": "/EngineerDanny.github.io/static/js/2.6ad5381f.chunk.js",
+    "static/js/2.6ad5381f.chunk.js.map": "/EngineerDanny.github.io/static/js/2.6ad5381f.chunk.js.map",
+    "static/js/3.c52fd227.chunk.js": "/EngineerDanny.github.io/static/js/3.c52fd227.chunk.js",
+    "static/js/3.c52fd227.chunk.js.map": "/EngineerDanny.github.io/static/js/3.c52fd227.chunk.js.map",
     "index.html": "/EngineerDanny.github.io/index.html",
     "static/css/2.26dc49ed.chunk.css.map": "/EngineerDanny.github.io/static/css/2.26dc49ed.chunk.css.map",
     "static/css/main.a76dfff0.chunk.css.map": "/EngineerDanny.github.io/static/css/main.a76dfff0.chunk.css.map",
-    "static/js/2.f1d5b1b5.chunk.js.LICENSE.txt": "/EngineerDanny.github.io/static/js/2.f1d5b1b5.chunk.js.LICENSE.txt",
+    "static/js/2.6ad5381f.chunk.js.LICENSE.txt": "/EngineerDanny.github.io/static/js/2.6ad5381f.chunk.js.LICENSE.txt",
     "static/media/1.1593e167.png": "/EngineerDanny.github.io/static/media/1.1593e167.png",
     "static/media/1.205eef5b.webp": "/EngineerDanny.github.io/static/media/1.205eef5b.webp",
     "static/media/1.41a532c5.webp": "/EngineerDanny.github.io/static/media/1.41a532c5.webp",
@@ -47,19 +47,15 @@
     "static/media/engineerdanny.388709c5.png": "/EngineerDanny.github.io/static/media/engineerdanny.388709c5.png",
     "static/media/firebase.65c4fe9f.png": "/EngineerDanny.github.io/static/media/firebase.65c4fe9f.png",
     "static/media/flutter.dc29033c.svg": "/EngineerDanny.github.io/static/media/flutter.dc29033c.svg",
-    "static/media/gcloud.d398a7e0.png": "/EngineerDanny.github.io/static/media/gcloud.d398a7e0.png",
     "static/media/godlives.1a96873c.png": "/EngineerDanny.github.io/static/media/godlives.1a96873c.png",
     "static/media/google-play-badge.f902960a.png": "/EngineerDanny.github.io/static/media/google-play-badge.f902960a.png",
-    "static/media/iOS.0677299b.png": "/EngineerDanny.github.io/static/media/iOS.0677299b.png",
-    "static/media/my-pic.ef68c439.jpg": "/EngineerDanny.github.io/static/media/my-pic.ef68c439.jpg",
-    "static/media/next.e2b6a1b7.svg": "/EngineerDanny.github.io/static/media/next.e2b6a1b7.svg",
     "static/media/react.928f956d.svg": "/EngineerDanny.github.io/static/media/react.928f956d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.00d8fdf1.js",
+    "static/js/runtime-main.2b5ef128.js",
     "static/css/2.26dc49ed.chunk.css",
-    "static/js/2.f1d5b1b5.chunk.js",
+    "static/js/2.6ad5381f.chunk.js",
     "static/css/main.a76dfff0.chunk.css",
-    "static/js/main.26be016f.chunk.js"
+    "static/js/main.703625be.chunk.js"
   ]
 }
