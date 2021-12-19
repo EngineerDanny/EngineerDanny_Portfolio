@@ -62,11 +62,23 @@ export const NavBar = () => {
 };
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "About", href: "/about", current: false },
-  { name: "Experience", href: "/experience", current: false },
-  { name: "Projects", href: "/projects", current: false },
-  { name: "Contact", href: "/contact", current: false },
+  { name: "Home", href: "https:/engineerdanny.me/#/", current: true },
+  { name: "About", href: "https:/engineerdanny.me/#/about", current: false },
+  {
+    name: "Experience",
+    href: "https:/engineerdanny.me/#/experience",
+    current: false,
+  },
+  {
+    name: "Projects",
+    href: "https:/engineerdanny.me/#/projects",
+    current: false,
+  },
+  {
+    name: "Contact",
+    href: "https:/engineerdanny.me/#/contact",
+    current: false,
+  },
 ];
 
 function classNames(...classes) {
@@ -128,7 +140,6 @@ export function Example() {
                 <Disclosure.Button
                   key={item.name}
                   as="a"
-                  
                   href={item.href}
                   className={classNames(
                     item.current
