@@ -128,6 +128,7 @@ export function Example() {
                 <Disclosure.Button
                   key={item.name}
                   as="a"
+                  
                   href={item.href}
                   className={classNames(
                     item.current
