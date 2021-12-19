@@ -62,21 +62,21 @@ export const NavBar = () => {
 };
 
 const navigation = [
-  { name: "Home", href: "https:/engineerdanny.me/#/", current: true },
-  { name: "About", href: "https:/engineerdanny.me/#/about", current: false },
+  { name: "Home", href: "/", current: true },
+  { name: "About", href: "/about", current: false },
   {
     name: "Experience",
-    href: "https:/engineerdanny.me/#/experience",
+    href: "/experience",
     current: false,
   },
   {
     name: "Projects",
-    href: "https:/engineerdanny.me/#/projects",
+    href: "/projects",
     current: false,
   },
   {
     name: "Contact",
-    href: "https:/engineerdanny.me/#/contact",
+    href: "/contact",
     current: false,
   },
 ];
@@ -140,7 +140,7 @@ export function Example() {
                 <Disclosure.Button
                   key={item.name}
                   as="a"
-                  href={item.href}
+                  href={"/#" + item.href}
                   className={classNames(
                     item.current
                       ? "bg-gray-900 text-white"

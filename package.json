@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://EngineerDanny.github.io/EngineerDanny.github.io",
+  "homepage": "https://EngineerDanny.github.io/",
   "dependencies": {
     "@craco/craco": "^6.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
