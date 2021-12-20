@@ -6,6 +6,7 @@ import HeroSection from "./components/HeroSection";
 import UpdatedAbout from "./components/UpdatedAbout";
 import ContactPage from "./components/ContactPage";
 import { ExperienceLayout } from "./components/UpdatedExperience";
+import ResumePage from "./components/ResumePage";
 
 function App() {
   const location = useLocation();
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <ContactPage />
+          </Route>
+          <Route path="/resume">
+            <ResumePage />
           </Route>
           <Route path="/">
             <HeroSection />
