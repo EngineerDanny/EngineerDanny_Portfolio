@@ -1,83 +1,21 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
-export const NavBar = () => {
-  const [hasScrolledDown, setHasScrolledDown] = useState(false);
-
-  let prevScrollPos = window.pageYOffset;
-
-  window.onscroll = () => {
-    const currentScrollPos = window.pageYOffset;
-    setHasScrolledDown(prevScrollPos <= currentScrollPos);
-    prevScrollPos = currentScrollPos;
-  };
-  //add style for when item(selected) is active
-  const mActiveStyle = {
-    color: "rgba(16, 185, 129, 1)",
-    paddingBottom: "5px",
-    borderColor: "rgba(16, 185, 129, 1)",
-    borderBottomWidth: "1px",
-  };
-  return (
-    <nav
-      className={` fixed ${
-        hasScrolledDown ? "-top-40" : "top-0"
-      } flex flex-row p-5 items-center justify-between 
-      transition-all duration-500 w-full z-10 shadow-lg h-16 backdrop-blur`}
-    >
-      <ul className="flex flex-row items-center">
-        <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <NavLink exact to="/" activeStyle={mActiveStyle}>
-            Home
-          </NavLink>
-        </li>
-        <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <NavLink to="/about" activeStyle={mActiveStyle}>
-            About
-          </NavLink>
-        </li>
-        <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <NavLink to="/experience" activeStyle={mActiveStyle}>
-            Experience
-          </NavLink>
-        </li>
-        <li class="text-sm mx-2 text-gray-300 hover:text-green-500">
-          <NavLink to="/projects" activeStyle={mActiveStyle}>
-            Projects
-          </NavLink>
-        </li>
-        <li class="mx-2">
-          <button
-            className="text-sm px-5 py-1.5 border-2 border-green-500 s focus:outline-none
-          rounded-full text-green-500 hover:bg-green-500 hover:text-white"
-          >
-            Resumè
-          </button>
-        </li>
-      </ul>
-    </nav>
-  );
-};
-
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "About", href: "/about", current: false },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
   {
     name: "Experience",
     href: "/experience",
-    current: false,
   },
   {
     name: "Projects",
     href: "/projects",
-    current: false,
   },
   {
     name: "Contact",
     href: "/contact",
-    current: false,
   },
 ];
 
@@ -86,6 +24,7 @@ function classNames(...classes) {
 }
 
 export function Example() {
+  const location = useLocation();
   return (
     <Disclosure as="nav" className=" bg-navy200">
       {({ open }) => (
@@ -119,8 +58,11 @@ export function Example() {
                         to={item.href}
                         // activeStyle="bg-gray-900 text-white"
                         className={classNames(
-                          "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "px-3 py-2 rounded-md text-sm font-medium"
+                          "text-gray-300 hover:bg-gray-700 hover:text-white rounded-xl",
+                          "px-3 py-2 rounded-md text-sm font-medium border",
+                          location.pathname === item.href
+                            ? "border-indigo-600  "
+                            : " border-transparent"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -142,7 +84,7 @@ export function Example() {
                   as="a"
                   href={"/#" + item.href}
                   className={classNames(
-                    item.current
+                    location.pathname === item.href
                       ? "bg-gray-900 text-white"
                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block px-3 py-2 rounded-md text-base font-medium"
