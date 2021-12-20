@@ -10,47 +10,56 @@ import android from "../assets/techs/android.svg";
 import flutter from "../assets/techs/flutter.svg";
 import firebase from "../assets/techs/firebase.png";
 
+import c from "../assets/languages/c.png";
+import dart from "../assets/languages/dart.png";
+import java from "../assets/languages/java.png";
+import js from "../assets/languages/js.png";
+import matlab from "../assets/languages/matlab.png";
+import php from "../assets/languages/php.png";
+import python from "../assets/languages/python.png";
+import swift from "../assets/languages/swift.png";
+
 const progLanguages = [
   {
     title: "MATLAB",
     percentage: "80%",
-    icon: ScaleIcon,
+    icon: matlab,
   },
   {
     title: "PHP",
     percentage: "70%",
-    icon: GlobeAltIcon,
+    icon: php,
   },
 
   {
     title: "C Programming Language",
     percentage: "85%",
-    icon: AnnotationIcon,
+    icon: c,
   },
   {
     title: "Java",
     percentage: "90%",
-    icon: AnnotationIcon,
+    icon: java,
   },
   {
     title: "Dart",
     percentage: "98%",
-    icon: AnnotationIcon,
+    icon: dart,
   },
   {
     title: "JS/TS",
     percentage: "98%",
-    icon: AnnotationIcon,
+    icon: js,
   },
   {
     title: "Swift/ObjC",
     percentage: "60%",
-    icon: AnnotationIcon,
+    icon: swift,
   },
   {
     title: "Python",
     percentage: "80%",
-    icon: AnnotationIcon,
+    icon: python,
   },
 ];
 
@@ -122,8 +131,13 @@ export default function UpdatedAbout() {
             {progLanguages.map((feature, index) => (
               <div key={index} className="relative">
                 <dt>
-                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                    <feature.icon className="h-6 w-6" aria-hidden="true" />
+                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-white text-white">
+                  <img
+                      src={feature.icon}
+                      className="h-8 w-8 object-fill"
+                      aria-hidden="true"
+                      alt=""
+                    />
                   </div>
                   <p className="ml-16 text-lg leading-6 font-medium ">
                     {feature.title}
