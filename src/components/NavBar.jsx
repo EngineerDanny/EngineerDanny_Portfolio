@@ -49,6 +49,7 @@ export function NavBar() {
                     <span className="font-bold text-indigo-600">Danny</span>
                   </div>
                 </div>
+                <div className="hiddem sm:flex-1"></div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
