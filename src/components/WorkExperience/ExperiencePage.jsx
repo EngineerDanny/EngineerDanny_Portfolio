@@ -1,7 +1,7 @@
 import React from "react";
-import chosenbiz from "../assets/companies/chosen-biz.png";
-import dynammite from "../assets/companies/dynammite.png";
-import godlives from "../assets/companies/godlives.png";
+import chosenbiz from "../../assets/companies/chosen-biz.png";
+import dynammite from "../../assets/companies/dynammite.png";
+import godlives from "../../assets/companies/godlives.png";
 import { CheckCircleIcon } from "@heroicons/react/solid";
 
 const workData = [
@@ -49,7 +49,7 @@ const workData = [
   },
 ];
 
-export const UpdatedExperience = ({ experience }) => {
+const ExperienceTile = ({ experience }) => {
   return (
     <>
       <div className=" bg-navy200  rounded-xl flex hover:shadow-2xl ">
@@ -104,17 +104,19 @@ export const UpdatedExperience = ({ experience }) => {
   );
 };
 
-export const ExperienceLayout = () => {
+const ExperiencePage = () => {
   return (
     <div className="min-h-screen  py-8 px-6 lg:px-16">
       {/* Card is full width. Use in 12 col grid for best view. */}
       {/* Card code block start */}
       <div className="w-full grid sm:grid-cols-1 md:grid-cols-2 gap-8  ">
         {workData.map((value) => {
-          return <UpdatedExperience experience={value} />;
+          return <ExperienceTile experience={value} />;
         })}
       </div>
       {/* Card code block end */}
     </div>
   );
 };
+
+export default ExperiencePage;

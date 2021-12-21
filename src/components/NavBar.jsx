@@ -23,7 +23,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export function Example() {
+export function NavBar() {
   const location = useLocation();
   return (
     <Disclosure as="nav" className=" bg-navy200">

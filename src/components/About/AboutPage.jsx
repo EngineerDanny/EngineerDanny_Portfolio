@@ -3,21 +3,20 @@ import {
   GlobeAltIcon,
   ScaleIcon,
 } from "@heroicons/react/outline";
-import TechTile from "./About/TechTile";
-import node from "../assets/techs/node.png";
-import react from "../assets/techs/react.svg";
-import android from "../assets/techs/android.svg";
-import flutter from "../assets/techs/flutter.svg";
-import firebase from "../assets/techs/firebase.png";
-
-import c from "../assets/languages/c.png";
-import dart from "../assets/languages/dart.png";
-import java from "../assets/languages/java.png";
-import js from "../assets/languages/js.png";
-import matlab from "../assets/languages/matlab.png";
-import php from "../assets/languages/php.png";
-import python from "../assets/languages/python.png";
-import swift from "../assets/languages/swift.png";
+import TechTile from "./TechTile";
+import node from "../../assets/techs/node.png";
+import react from "../../assets/techs/react.svg";
+import android from "../../assets/techs/android.svg";
+import flutter from "../../assets/techs/flutter.svg";
+import firebase from "../../assets/techs/firebase.png";
+import c from "../../assets/languages/c.png";
+import dart from "../../assets/languages/dart.png";
+import java from "../../assets/languages/java.png";
+import js from "../../assets/languages/js.png";
+import matlab from "../../assets/languages/matlab.png";
+import php from "../../assets/languages/php.png";
+import python from "../../assets/languages/python.png";
+import swift from "../../assets/languages/swift.png";
 
 const progLanguages = [
   {
@@ -103,7 +102,7 @@ const frameworks = [
   },
 ];
 
-export default function UpdatedAbout() {
+export default function AboutPage() {
   return (
     <div className="py-12 bg-navy min-h-screen text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

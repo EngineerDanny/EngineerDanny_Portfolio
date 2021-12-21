@@ -1,33 +1,32 @@
-import { Example } from "./components/NavBar";
+import { NavBar } from "./components/NavBar";
 import Projects from "./components/Projects/Projects";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import HeroSection from "./components/HeroSection";
-import UpdatedAbout from "./components/UpdatedAbout";
+import AboutPage from "./components/About/AboutPage";
 import ContactPage from "./components/ContactPage";
-import { ExperienceLayout } from "./components/UpdatedExperience";
+import  ExperiencePage  from "./components/WorkExperience/ExperiencePage";
 
 
 function App() {
   const location = useLocation();
   return (
     <div className=" h-full bg-navy text-white  mx-auto ">
-      <Example />
+      <NavBar />
       <AnimatePresence exitBeforeEnter initial={false}>
         <Switch location={location} key={location.pathname}>
           <Route path="/about">
-            <UpdatedAbout />
+            <AboutPage />
           </Route>
           <Route path="/experience">
-            <ExperienceLayout />
+            <ExperiencePage />
           </Route>
           <Route path="/projects">
             <Projects />
           </Route>
           <Route path="/contact">
             <ContactPage />
-          </Route>
-        
+          </Route>      
           <Route path="/">
             <HeroSection />
           </Route>
