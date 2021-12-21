@@ -2,11 +2,10 @@ import { NavBar } from "./components/NavBar";
 import Projects from "./components/Projects/Projects";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import HeroSection from "./components/HeroSection";
+import HomePage from "./components/HomePage";
 import AboutPage from "./components/About/AboutPage";
 import ContactPage from "./components/ContactPage";
-import  ExperiencePage  from "./components/WorkExperience/ExperiencePage";
-
+import ExperiencePage from "./components/WorkExperience/ExperiencePage";
 
 function App() {
   const location = useLocation();
@@ -26,9 +25,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <ContactPage />
-          </Route>      
+          </Route>
           <Route path="/">
-            <HeroSection />
+            <HomePage />
           </Route>
         </Switch>
       </AnimatePresence>

@@ -3,7 +3,7 @@ import {
   GlobeAltIcon,
   ScaleIcon,
 } from "@heroicons/react/outline";
-import TechTile from "./TechTile";
+import { motion } from "framer-motion";
 import node from "../../assets/techs/node.png";
 import react from "../../assets/techs/react.svg";
 import android from "../../assets/techs/android.svg";
@@ -102,6 +102,20 @@ const frameworks = [
   },
 ];
 
+const TechTile = ({ percentage }) => {
+  return (
+    <tr className="flex flex-row mb-4 h-2">
+      <td className="flex rounded-lg bg-white w-full">
+        <motion.div
+          animate={{ width: percentage }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="rounded-l-lg origin-left bg-gradient-to-br  from-indigo-300 to-indigo-500"
+        ></motion.div>
+      </td>
+    </tr>
+  );
+};
+
 export default function AboutPage() {
   return (
     <div className="py-12 bg-navy min-h-screen text-white">
@@ -131,7 +145,7 @@ export default function AboutPage() {
               <div key={index} className="relative">
                 <dt>
                   <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-white text-white">
-                  <img
+                    <img
                       src={feature.icon}
                       className="h-8 w-8 object-fill"
                       aria-hidden="true"

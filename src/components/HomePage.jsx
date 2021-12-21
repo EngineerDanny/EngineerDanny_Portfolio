@@ -1,7 +1,7 @@
 import profilePic from "../assets/engineerdanny.png";
 import myResume from "../assets/resume.pdf"
 
-export default function HeroSection() {
+export default function HomePage() {
   return (
     <div className="relative overflow-hidden min-h-screen">
       <div className="max-w-7xl mx-auto">
