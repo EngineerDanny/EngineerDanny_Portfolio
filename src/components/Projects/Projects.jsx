@@ -64,8 +64,7 @@ const projectModels = [
     images: [aukiss1, aukiss2, aukiss3, aukiss4, aukiss5],
     google_play_link:
       "https://play.google.com/store/apps/details?id=com.aukiss.aukiss_app",
-    apple_appstore_link:
-      "https://apps.apple.com/us/app/farmhouse-movies/id1541154245",
+    apple_appstore_link: "https://apps.apple.com/tt/app/aukiss-tv/id1534585800",
   },
   {
     title: "ShaQ Express",
@@ -79,7 +78,7 @@ const projectModels = [
     google_play_link:
       "https://play.google.com/store/apps/details?id=com.shaqexpress.app",
     apple_appstore_link:
-      "https://apps.apple.com/us/app/farmhouse-movies/id1541154245",
+      "https://apps.apple.com/gh/app/shaq-express/id1533502582",
   },
 
   {
@@ -90,7 +89,7 @@ const projectModels = [
     google_play_link:
       "https://play.google.com/store/apps/details?id=com.heartsofoak.app",
     apple_appstore_link:
-      "https://apps.apple.com/us/app/farmhouse-movies/id1541154245",
+      "https://apps.apple.com/us/app/accra-hearts-of-oak/id1588680795",
   },
   {
     title: "Lystn (Beta)",
@@ -103,8 +102,7 @@ const projectModels = [
     images: [lystn1, lystn2, lystn3, lystn4],
     google_play_link:
       "https://play.google.com/store/apps/details?id=com.jubelapp.lystn",
-    apple_appstore_link:
-      "https://apps.apple.com/us/app/farmhouse-movies/id1541154245",
+    apple_appstore_link: "https://apps.apple.com/gh/app/lystn/id1527800470",
   },
   {
     title: "Godlives (Internal Beta)",
@@ -114,8 +112,7 @@ const projectModels = [
     images: [godlives1, godlives2, godlives3, godlives4],
     google_play_link:
       "https://play.google.com/store/apps/details?id=com.godlivesdelivery.userapp",
-    apple_appstore_link:
-      "https://apps.apple.com/us/app/farmhouse-movies/id1541154245",
+    apple_appstore_link: null,
   },
 ];
 
