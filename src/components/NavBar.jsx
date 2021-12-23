@@ -1,6 +1,7 @@
 import { NavLink, useLocation } from "react-router-dom";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import mylogo from "../assets/logo.png"
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -44,6 +45,7 @@ export function NavBar() {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
+                  <img src={mylogo} alt="" srcset="" className="h-7 w-7 rounded-full md:mr-10 mr-3" />
                   <div class="headline">
                     <span className="font-bold">Engineer</span>
                     <span className="font-bold text-indigo-600">Danny</span>
@@ -59,7 +61,7 @@ export function NavBar() {
                         to={item.href}
                         // activeStyle="bg-gray-900 text-white"
                         className={classNames(
-                          "text-gray-300 hover:bg-gray-700 hover:text-white rounded-xl",
+                          "text-gray-300 hover:bg-indigo-600 hover:text-white rounded-xl",
                           "px-3 py-2 rounded-md text-sm font-medium border",
                           location.pathname === item.href
                             ? "border-indigo-600  "
@@ -86,7 +88,7 @@ export function NavBar() {
                   href={"/#" + item.href}
                   className={classNames(
                     location.pathname === item.href
-                      ? "bg-gray-900 text-white"
+                      ? "bg-indigo-600  text-white"
                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block px-3 py-2 rounded-md text-base font-medium"
                   )}

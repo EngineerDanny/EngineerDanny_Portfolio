@@ -1,5 +1,5 @@
 import profilePic from "../assets/engineerdanny.png";
-import myResume from "../assets/resume.pdf"
+import myResume from "../assets/resume.pdf";
 
 export default function HomePage() {
   return (
@@ -48,7 +48,7 @@ export default function HomePage() {
                 <div className="rounded-md shadow">
                   <a
                     href="mailto:agyapongdaniel7777@gmail.com"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium  rounded-xl text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                   >
                     Hire Me
                   </a>
@@ -56,7 +56,7 @@ export default function HomePage() {
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     href={myResume}
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium  rounded-xl text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   >
                     Résumé.
                   </a>
