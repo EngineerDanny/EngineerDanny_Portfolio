@@ -21,12 +21,12 @@ import swift from "../../assets/languages/swift.png";
 const progLanguages = [
   {
     title: "MATLAB",
-    percentage: "80%",
+    percentage: "90%",
     icon: matlab,
   },
   {
     title: "PHP",
-    percentage: "70%",
+    percentage: "95%",
     icon: php,
   },
 
@@ -37,27 +37,27 @@ const progLanguages = [
   },
   {
     title: "Java",
-    percentage: "90%",
+    percentage: "98%",
     icon: java,
   },
   {
     title: "Dart",
-    percentage: "98%",
+    percentage: "99%",
     icon: dart,
   },
   {
     title: "JS/TS",
-    percentage: "98%",
+    percentage: "99%",
     icon: js,
   },
   {
     title: "Swift/ObjC",
-    percentage: "60%",
+    percentage: "80%",
     icon: swift,
   },
   {
     title: "Python",
-    percentage: "80%",
+    percentage: "95%",
     icon: python,
   },
 ];
@@ -65,38 +65,38 @@ const progLanguages = [
 const frameworks = [
   {
     title: "Flutter",
-    percentage: "70%",
+    percentage: "100%",
     icon: GlobeAltIcon,
     image: flutter,
   },
   {
     title: "React/Next",
-    percentage: "80%",
+    percentage: "95%",
     icon: ScaleIcon,
     image: react,
   },
   {
     title: "Laravel",
-    percentage: "90%",
+    percentage: "95%",
     icon: AnnotationIcon,
     image: android,
   },
   {
     title: "Android/iOS",
-    percentage: "98%",
+    percentage: "95%",
     icon: AnnotationIcon,
     image: android,
   },
   {
     title: "Firebase/GCloud",
-    percentage: "98%",
+    percentage: "99%",
     icon: AnnotationIcon,
     image: firebase,
   },
 
   {
     title: "Node/Express",
-    percentage: "80%",
+    percentage: "99%",
     icon: AnnotationIcon,
     image: node,
   },
