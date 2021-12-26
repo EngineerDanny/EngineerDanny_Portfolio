@@ -1,5 +1,12 @@
-import React from "react";
+import { Formik, Field, Form, FieldArray } from "formik";
+import { Link } from "react-router-dom";
+
 function ContactPage() {
+  // function handleSubmit(event) {
+  //   alert("An essay was submitted: " + event);
+  //   // event.preventDefault();
+  // }
+
   return (
     <div className="container mx-auto pt-16 min-h-screen">
       <div className="lg:flex">
@@ -13,7 +20,7 @@ function ContactPage() {
               some suggestions or just want to say Hi? Just contact me and say
               Hello.
             </p>
-            
+
             <a
               href="tel:+233548215725"
               className="text-white hover:underline  cursor-pointer"
@@ -70,93 +77,103 @@ function ContactPage() {
           </div>
         </div>
         <div className="xl:w-3/5 lg:w-3/5  h-full pt-5 pb-5 xl:pr-5 xl:pl-0 rounded-tr rounded-br bg-navy200">
-          <form id="contact" className="py-4 px-8 rounded-tr rounded-br">
-            <h1 className="text-4xl text-white font-extrabold mb-6">
-              Enter Details
-            </h1>
-            <div className="block xl:flex w-full flex-wrap justify-between mb-6">
-              <div className="w-2/4 max-w-xs mb-6 xl:mb-0">
-                <div className="flex flex-col">
-                  <label
-                    htmlFor="full_name"
-                    className="text-gray-400 text-sm font-semibold leading-tight tracking-normal mb-2"
-                  >
-                    Full Name
-                  </label>
-                  <input
-                    required
-                    id="full_name"
-                    name="full_name"
-                    type="text"
-                    className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border text-black"
-                    placeholder
-                  />
+          <Formik
+            initialValues={{ full_name: "", email: "", phone: "", message: "" }}
+            onSubmit={async (values) => {
+              // alert(JSON.stringify(values, null, 2));
+              const newWindow = window.open('mailto:agyapongdaniel7777@gmail.com')
+              if (newWindow) newWindow.opener = null
+            }}
+          >
+            <Form className="py-4 px-8 rounded-tr rounded-br">
+              <h1 className="text-4xl text-white font-extrabold mb-6">
+                Enter Details
+              </h1>
+              <div className="block xl:flex w-full flex-wrap justify-between mb-6">
+                <div className="w-2/4 max-w-xs mb-6 xl:mb-0">
+                  <div className="flex flex-col">
+                    <label
+                      htmlFor="full_name"
+                      className="text-gray-400 text-sm font-semibold leading-tight tracking-normal mb-2"
+                    >
+                      Full Name
+                    </label>
+
+                    <Field
+                      required
+                      id="full_name"
+                      name="full_name"
+                      type="text"
+                      className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border text-black"
+                      placeholder
+                    />
+                  </div>
+                </div>
+                <div className="w-2/4 max-w-xs xl:flex xl:justify-end">
+                  <div className="flex flex-col">
+                    <label
+                      htmlFor="email"
+                      className="text-gray-400 text-sm font-semibold leading-tight tracking-normal mb-2"
+                    >
+                      Email
+                    </label>
+                    <Field
+                      required
+                      id="email"
+                      name="email"
+                      type="email"
+                      className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border text-black"
+                      placeholder
+                    />
+                  </div>
                 </div>
               </div>
-              <div className="w-2/4 max-w-xs xl:flex xl:justify-end">
-                <div className="flex flex-col">
-                  <label
-                    htmlFor="email"
-                    className="text-gray-400 text-sm font-semibold leading-tight tracking-normal mb-2"
-                  >
-                    Email
-                  </label>
-                  <input
-                    required
-                    id="email"
-                    name="email"
-                    type="email"
-                    className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border text-black"
-                    placeholder
-                  />
+              <div className="flex w-full flex-wrap">
+                <div className="w-2/4 max-w-xs">
+                  <div className="flex flex-col">
+                    <label
+                      htmlFor="phone"
+                      className="text-gray-400 text-sm font-semibold leading-tight tracking-normal mb-2"
+                    >
+                      Phone
+                    </label>
+                    <Field
+                      required
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border text-black"
+                      placeholder
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="flex w-full flex-wrap">
-              <div className="w-2/4 max-w-xs">
+              <div className="w-full mt-6">
                 <div className="flex flex-col">
                   <label
-                    htmlFor="phone"
-                    className="text-gray-400 text-sm font-semibold leading-tight tracking-normal mb-2"
+                    className="text-gray-400 text-sm font-semibold  mb-2"
+                    htmlFor="message"
                   >
-                    Phone
+                    Message
                   </label>
-                  <input
-                    required
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    className="focus:outline-none focus:border focus:border-indigo-700 font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border text-black"
+                  <Field
                     placeholder
+                    name="message"
+                    className="border-gray-300 border mb-4 rounded py-2 text-sm outline-none resize-none px-3 focus:border focus:border-indigo-700 text-black"
+                    rows={8}
+                    id="message"
+                    defaultValue={""}
                   />
                 </div>
-              </div>
-            </div>
-            <div className="w-full mt-6">
-              <div className="flex flex-col">
-                <label
-                  className="text-gray-400 text-sm font-semibold  mb-2"
-                  htmlFor="message"
+                <button
+                  type="submit"
+                  className="focus:outline-none bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600  rounded-xl text-white px-8 py-3 text-sm leading-6"
                 >
-                  Message
-                </label>
-                <textarea
-                  placeholder
-                  name="message"
-                  className="border-gray-300 border mb-4 rounded py-2 text-sm outline-none resize-none px-3 focus:border focus:border-indigo-700 text-black"
-                  rows={8}
-                  id="message"
-                  defaultValue={""}
-                />
+                  Submit
+                </button>
               </div>
-              <button
-                type="submit"
-                className="focus:outline-none bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-8 py-3 text-sm leading-6"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
+            </Form>
+          </Formik>
         </div>
       </div>
     </div>
