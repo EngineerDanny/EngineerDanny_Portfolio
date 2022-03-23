@@ -112,7 +112,7 @@ const projectModels = [
     images: [godlives1, godlives2, godlives3, godlives4],
     google_play_link:
       "https://play.google.com/store/apps/details?id=com.godlivesdelivery.userapp",
-    apple_appstore_link: null,
+    apple_appstore_link: "https://apps.apple.com/us/app/id1517209667",
   },
 ];
 
