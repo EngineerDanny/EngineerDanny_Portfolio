@@ -17,9 +17,7 @@ function App() {
           <Route path="/about">
             <AboutPage />
           </Route>
-          <Route path="/experience">
-            <ExperiencePage />
-          </Route>
+  
           <Route path="/projects">
             <Projects />
           </Route>
