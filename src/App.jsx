@@ -4,8 +4,7 @@ import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import HomePage from "./components/HomePage";
 import AboutPage from "./components/About/AboutPage";
-import ContactPage from "./components/ContactPage";
-import ExperiencePage from "./components/WorkExperience/ExperiencePage";
+
 
 function App() {
   const location = useLocation();
@@ -20,9 +19,6 @@ function App() {
   
           <Route path="/projects">
             <Projects />
-          </Route>
-          <Route path="/contact">
-            <ContactPage />
           </Route>
           <Route path="/">
             <HomePage />
