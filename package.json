@@ -5,10 +5,10 @@
   "homepage": "https://EngineerDanny.github.io/",
   "dependencies": {
     "@craco/craco": "^6.0.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.18",
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
     "@testing-library/jest-dom": "^5.11.9",
